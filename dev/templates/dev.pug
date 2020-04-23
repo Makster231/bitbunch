@@ -1,0 +1,18 @@
+include ../common/pug/mixins
+
+block variables
+
+doctype html
+html(lang="en-US")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width")
+        meta(name="keywords" content=meta1)
+        meta(name="description" content=meta2)
+        link(rel="icon" type="image/x-icon" href="./images/favicon.ico")
+    body(class=pageClass)
+      block content

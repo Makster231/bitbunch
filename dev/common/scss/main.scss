@@ -1,0 +1,32 @@
+@import "fonts.scss";
+
+@import "mixins.scss";
+
+@import "vars.scss";
+
+@import "./bootstrap/bootstrap.scss";
+
+@import "layout.scss";
+
+// components
+@import "./components.scss";
+
+// slider
+@import "./slick.scss";
+
+//date-picker
+@import "./bootstrap/bootstrap-datepicker.scss";
+
+//custom-select
+@import "./custom-select/jquery.custom-select.scss";
+
+// dev menu
+@import "../../blocks/dev-menu/dev-menu.scss";
+
+// home page
+
+// header
+@import "../../blocks/main-header/main-header-desktop.scss";
+
+// footer
+@import "../../blocks/main-footer/main-footer-desktop";

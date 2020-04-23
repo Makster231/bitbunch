@@ -1,0 +1,19 @@
+.dev-menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.dev-menu__wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 53.125rem;
+}
+
+.dev-menu .button-orange {
+  margin: .9375rem;
+}

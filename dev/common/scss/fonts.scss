@@ -1,0 +1,19 @@
+@import "mixins";
+
+@include font-face("SarabunRegular", "../../fonts/Sarabun-Regular", 400);
+
+@include font-face("SarabunMedium", "../../fonts/Sarabun-Medium", 400);
+
+@include font-face("SarabunSemiBold", "../../fonts/Sarabun-SemiBold", 400);
+
+@include font-face("SarabunExtraBold", "../../fonts/Sarabun-ExtraBold", 400);
+
+@include font-face("HindSlSemiBold", "../../fonts/HindSiliguri-SemiBold", 400);
+
+// @include font-face("latoRegular", "../../fonts/LatoLatin-Regular", 400);
+
+// @include font-face("latoBold", "../../fonts/LatoLatin-Bold", 400);
+
+// @include font-face("latoBlack", "../../fonts/LatoLatin-Black", 400);
+
+// @include font-face("latoLight", "../../fonts/LatoLatin-Light", 400);
