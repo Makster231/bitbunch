@@ -658,6 +658,8 @@ button.plyr__control--overlaid:hover { background-color: rgba(250, 143, 104, 0.8
 
 #formModal { position: absolute; z-index: 9999; display: flex; align-items: center; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75); text-align: center; }
 
+body { background-color: #fafbff; }
+
 *::-webkit-scrollbar { width: 10px; }
 
 *::-webkit-scrollbar-track { background: #1f1f1f; box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.14); }
@@ -706,11 +708,11 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .entry-wrapper--footer a:hover { opacity: 1; }
 
-.benefits { background-color: #fafbff; padding-top: 48px; padding-bottom: 48px; }
+.benefits { padding-top: 48px; padding-bottom: 48px; }
 
 .benefits-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
 
-.benefits-wrapper h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1, 45; text-align: center; color: #43425f; margin-bottom: 32px; }
+.benefits-wrapper h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; color: #43425f; margin-bottom: 32px; }
 
 .benefits-wrapper--header .benefits-header--block { padding: 18px; margin-bottom: 18px; background: #fff; box-shadow: 8px 9px 18px rgba(80, 87, 94, 0.1); border-radius: 2px; display: flex; flex-direction: row; }
 
@@ -753,6 +755,42 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 .statistic-wrapper--body .statistic-body--block h5 { font-family: "Hind Siliguri", sans-serif; font-size: 22px; line-height: 36px; color: #fff; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); }
 
 .statistic-wrapper--body .statistic-body--block p { font-family: "Hind Siliguri", sans-serif; font-weight: 500; font-size: 10px; line-height: 1.6; text-transform: uppercase; color: rgba(255, 255, 255, 0.8); }
+
+.works { padding-top: 48px; padding-bottom: 41px; }
+
+.works-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+.works-wrapper--header { margin-bottom: 32px; }
+
+.works-wrapper--header h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; color: #43425f; margin-bottom: 5px; }
+
+.works-wrapper--header p { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 1.83; text-align: center; color: rgba(67, 66, 95, 0.8); }
+
+.works-wrapper--body .works-body--block { margin-bottom: 32px; }
+
+.works-wrapper--body .works-body--block h3 { font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 14px; line-height: 2.21; text-transform: uppercase; color: rgba(50, 78, 163, 0.8); margin-bottom: 8px; }
+
+.works-wrapper--body .works-body--block p { font-family: "Sarabun", sans-serif; font-size: 12px; line-height: 2; color: rgba(97, 104, 132, 0.8); }
+
+.works-wrapper--footer { display: flex; flex-direction: row; align-items: center; }
+
+.works-wrapper--footer a:last-of-type { font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 1.5; text-align: center; text-transform: uppercase; color: #5e74b7; margin-left: 20px; }
+
+.works-wrapper--footer a:last-of-type:hover { text-decoration: underline; }
+
+.founders { position: relative; padding-bottom: 41px; padding-top: 100px; background: url(../../images/founders/bg-mobile.png) center no-repeat; background-size: cover; }
+
+.founders::before { content: ""; }
+
+.founders-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+.founders-wrapper--header { margin-bottom: 32px; }
+
+.founders-wrapper--header h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; color: #fff; margin-bottom: 5px; text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.3); }
+
+.founders-wrapper--header p { width: 100%; max-width: 250px; margin-left: auto; margin-right: auto; font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 1.83; text-align: center; color: #fff; }
+
+.founders-wrapper--body .founders-body--media { overflow: hidden; border-radius: 7px; }
 
 .container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; max-width: 1430px; width: 100%; position: relative; }
 

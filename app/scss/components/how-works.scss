@@ -1,0 +1,79 @@
+.works {
+  padding-top: 48px;
+  padding-bottom: 41px;
+
+  &-wrapper {
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+
+    &--header {
+      margin-bottom: 32px;
+      h2 {
+        font-family: "Hind Siliguri", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.45;
+        text-align: center;
+        color: #43425f;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        text-align: center;
+        color: rgba(#43425f, 0.8);
+      }
+    }
+
+    &--body {
+      .works-body--block {
+        margin-bottom: 32px;
+
+        h3 {
+          font-family: "Sarabun", sans-serif;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 2.21;
+          text-transform: uppercase;
+          color: rgba(#324ea3, 0.8);
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-family: "Sarabun", sans-serif;
+          font-size: 12px;
+          line-height: 2;
+          color: rgba(#616884, 0.8);
+        }
+      }
+    }
+
+    &--footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        &:last-of-type {
+          font-family: "Sarabun", sans-serif;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 1.5;
+          text-align: center;
+          text-transform: uppercase;
+          color: #5e74b7;
+          margin-left: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
