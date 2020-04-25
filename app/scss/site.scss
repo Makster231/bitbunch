@@ -5,11 +5,13 @@
 
 /* purgecss start ignore */
 //UI:
+@import "UI/btn";
 @import "UI/player";
 //Components:
 @import "components/general";
 @import "components/wrapper-page";
 @import "components/header-page";
+@import "components/benefits";
 @import "components/main-page";
 @import "components/footer-main";
 @import "components/grid";

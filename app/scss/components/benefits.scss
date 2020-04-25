@@ -1,0 +1,110 @@
+.benefits {
+  background-color: #fafbff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  &-wrapper {
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+
+    h2 {
+      font-family: "Hind Siliguri", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1, 45;
+      text-align: center;
+      color: #43425f;
+      margin-bottom: 32px;
+    }
+
+    &--header {
+      .benefits-header--block {
+        padding: 18px;
+        margin-bottom: 18px;
+        background: $brand-white;
+        box-shadow: 8px 9px 18px rgba(80, 87, 94, 0.1);
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+
+        &:last-of-type {
+          margin-bottom: 32px;
+        }
+
+        img {
+          width: 36px;
+          height: 36px;
+        }
+
+        p {
+          margin-left: 18px;
+          font-family: "Sarabun", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.69;
+          color: #091540;
+        }
+      }
+    }
+
+    &--body {
+      .benefits-body--block {
+        margin-bottom: 32px;
+        h3 {
+          font-family: "Sarabun", sans-serif;
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 1.71;
+          text-transform: uppercase;
+          color: rgba(#324ea3, 0.8);
+          margin-bottom: 8px;
+        }
+        p {
+          position: relative;
+          padding-left: 24px;
+          font-family: "Sarabun", sans-serif;
+          font-size: 12px;
+          line-height: 2;
+          color: rgba(#616884, 0.8);
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            background: url(../../images/benefits/icon-arrow--right.png) center
+              no-repeat;
+            background-size: contain;
+            width: 13px;
+            height: 8px;
+          }
+        }
+      }
+    }
+
+    &--footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        &:last-of-type {
+          font-family: "Sarabun", sans-serif;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 1.5;
+          text-align: center;
+          text-transform: uppercase;
+          color: #5e74b7;
+          margin-left: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

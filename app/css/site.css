@@ -124,9 +124,15 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-app
 
 a, label { -webkit-tap-highlight-color: transparent !important; }
 
-a:hover { color: none; text-decoration: none; }
+a { text-decoration: none; }
 
 /* purgecss start ignore */
+.btn { display: block; width: 100%; max-width: 137px; text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase; color: #fff; background-color: #fa8f68; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05); border-radius: 1.2px; transition: 0.3s ease; }
+
+.btn:hover { box-shadow: none; background-color: #f86a37; }
+
+.btn:active { transition: 0s; background-color: #c33906; }
+
 @-webkit-keyframes plyr-progress { to { background-position: 25px 0; } }
 
 @-moz-keyframes plyr-progress { to { background-position: 25px 0; } }
@@ -692,13 +698,41 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .entry-wrapper--body ul li::before { content: ""; position: absolute; left: 0; top: 0; width: 17px; height: 17px; background: url(../../images/header/icon-check.png) center no-repeat; background-size: contain; }
 
-.entry-wrapper--body a { display: block; width: 100%; max-width: 137px; text-align: center; padding-top: 10px; padding-bottom: 10px; margin-bottom: 28px; font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase; color: #fff; background-color: #fa8f68; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05); border-radius: 1.2px; text-decoration: none; }
+.entry-wrapper--body .btn { margin-bottom: 28px; }
 
 .entry-wrapper--footer { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; }
 
 .entry-wrapper--footer a { width: 100%; max-width: 26%; margin-bottom: 25px; opacity: 0.6; transition: 0.3s ease; }
 
 .entry-wrapper--footer a:hover { opacity: 1; }
+
+.benefits { background-color: #fafbff; padding-top: 48px; padding-bottom: 48px; }
+
+.benefits-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+.benefits-wrapper h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1, 45; text-align: center; color: #43425f; margin-bottom: 32px; }
+
+.benefits-wrapper--header .benefits-header--block { padding: 18px; margin-bottom: 18px; background: #fff; box-shadow: 8px 9px 18px rgba(80, 87, 94, 0.1); border-radius: 2px; display: flex; flex-direction: row; }
+
+.benefits-wrapper--header .benefits-header--block:last-of-type { margin-bottom: 32px; }
+
+.benefits-wrapper--header .benefits-header--block img { width: 36px; height: 36px; }
+
+.benefits-wrapper--header .benefits-header--block p { margin-left: 18px; font-family: "Sarabun", sans-serif; font-weight: 600; font-size: 12px; line-height: 1.69; color: #091540; }
+
+.benefits-wrapper--body .benefits-body--block { margin-bottom: 32px; }
+
+.benefits-wrapper--body .benefits-body--block h3 { font-family: "Sarabun", sans-serif; font-weight: 800; font-size: 14px; line-height: 1.71; text-transform: uppercase; color: rgba(50, 78, 163, 0.8); margin-bottom: 8px; }
+
+.benefits-wrapper--body .benefits-body--block p { position: relative; padding-left: 24px; font-family: "Sarabun", sans-serif; font-size: 12px; line-height: 2; color: rgba(97, 104, 132, 0.8); }
+
+.benefits-wrapper--body .benefits-body--block p::before { content: ""; position: absolute; left: 0; top: 8px; background: url(../../images/benefits/icon-arrow--right.png) center no-repeat; background-size: contain; width: 13px; height: 8px; }
+
+.benefits-wrapper--footer { display: flex; flex-direction: row; align-items: center; }
+
+.benefits-wrapper--footer a:last-of-type { font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 1.5; text-align: center; text-transform: uppercase; color: #5e74b7; margin-left: 20px; }
+
+.benefits-wrapper--footer a:last-of-type:hover { text-decoration: underline; }
 
 .container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; max-width: 1430px; width: 100%; position: relative; }
 

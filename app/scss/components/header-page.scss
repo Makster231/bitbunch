@@ -28,7 +28,7 @@
       margin-bottom: 36px;
 
       .entry-header--logo {
-        img{
+        img {
           width: 122px;
           height: 34px;
         }
@@ -86,24 +86,8 @@
         }
       }
 
-      a {
-        display: block;
-        width: 100%;
-        max-width: 137px;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+      .btn {
         margin-bottom: 28px;
-        font-family: "Sarabun", sans-serif;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 16px;
-        text-transform: uppercase;
-        color: $brand-white;
-        background-color: #fa8f68;
-        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
-        border-radius: 1.2px;
-        text-decoration: none;
       }
     }
 

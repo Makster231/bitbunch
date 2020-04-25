@@ -1,0 +1,28 @@
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 137px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Sarabun", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $brand-white;
+  background-color: $brand-warning;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 1.2px;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: none;
+    background-color: darken($brand-warning, 10%);
+  }
+
+  &:active {
+    transition: 0s;
+    background-color: darken($brand-warning, 30%);
+  }
+}
