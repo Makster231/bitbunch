@@ -1,7 +1,16 @@
-node_modules/
-.vscode/
-.idea/
-build/
-maket/
+.idea
+/.idea
+**/.idea
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+*.sqlite-journal
+/.vs
+node_modules/*
+/node_modules
+**/node_modules
+
+.package.json
+package.json
+.package-lock.json
 package-lock.json
 
