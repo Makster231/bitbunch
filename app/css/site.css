@@ -126,6 +126,10 @@ a, label { -webkit-tap-highlight-color: transparent !important; }
 
 a { text-decoration: none; }
 
+.text-warning { color: #fa8f68; }
+
+.text-purpule { color: #8b0bff; }
+
 /* purgecss start ignore */
 .btn { display: block; width: 100%; max-width: 137px; text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase; color: #fff; background-color: #fa8f68; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05); border-radius: 1.2px; transition: 0.3s ease; }
 
@@ -672,7 +676,7 @@ b { font-weight: 600; }
 
 img { max-width: 100%; object-fit: cover; width: 100%; }
 
-.wrapper-page { min-height: 100vh; display: flex; flex-direction: column; }
+.wrapper-page { min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; }
 
 .wrapper-page > * { width: 100%; }
 
@@ -792,9 +796,75 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .founders-wrapper--body .founders-body--media { overflow: hidden; border-radius: 7px; }
 
+.footer-top { padding-top: 47px; padding-bottom: 32px; background: url(../../images/footer/bg-mobile.jpg) center no-repeat; position: relative; background-size: cover; }
+
+.footer-top::after { content: ""; position: absolute; right: -65px; top: 0; bottom: 0; background: url(../../images/footer/triangle-bg--mobile.png) center no-repeat; width: 226px; height: 100%; z-index: 1; background-size: cover; opacity: 0.5; }
+
+.footer-top--header { margin-bottom: 82px; width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+.footer-top--header h6 { font-family: "Sarabun", sans-serif; font-weight: 500; width: 100%; text-align: center; margin-bottom: 15px; font-size: 12px; line-height: 16px; color: rgba(255, 255, 255, 0.8); position: relative; z-index: 5; }
+
+.footer-top--header h2 { font-family: "Hind Siliguri", sans-serif; font-weight: bold; font-size: 22px; line-height: 1.45; width: 100%; text-align: center; color: #fff; text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.3); margin-bottom: 50px; position: relative; z-index: 5; }
+
+.footer-top--header > p { font-family: "Sarabun", sans-serif; font-size: 49px; line-height: 63px; text-align: center; color: #fff; letter-spacing: -6px; position: relative; z-index: 5; }
+
+.footer-top--header > p strong { font-weight: bold; font-size: 100px; color: #fa8f68; }
+
+.footer-top--header span { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 2.58; width: 100%; text-align: center; display: block; color: rgba(255, 255, 255, 0.8); position: relative; z-index: 5; }
+
+.footer-top--header .footer-header--block { padding: 32px 5px; background-color: #fff; box-shadow: 0px 2px 4px rgba(93, 88, 88, 0.1); margin-top: 50px; border-radius: 2px; }
+
+.footer-top--header .footer-header--block span { display: inline-block; margin-bottom: 14px; width: 100%; font-weight: 400; color: #091540; z-index: 5; position: relative; }
+
+.footer-top--header .footer-header--block p { font-family: "Sarabun", sans-serif; max-width: 250px; margin-right: auto; margin-left: auto; font-weight: 500; font-size: 16px; line-height: 2.25; text-align: center; width: 100%; color: #091540; margin-bottom: 24px; z-index: 5; position: relative; }
+
+.footer-top--header .footer-header--block a { max-width: 208px; margin-left: auto; margin-right: auto; z-index: 5; position: relative; }
+
+.footer-top--body { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; padding-bottom: 80px; display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap; position: relative; z-index: 5; }
+
+.footer-top--body .footer-body--block { width: 100%; max-width: 120px; text-align: left; margin-bottom: 35px; }
+
+.footer-top--body .footer-body--block h4 { font-family: "Sarabun", sans-serif; font-size: 16px; line-height: 21px; color: #fff; margin-bottom: 18px; }
+
+.footer-top--body .footer-body--block a { font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 11px; line-height: 14px; color: #fff; margin-bottom: 15px; display: block; transition: 0.4s ease; }
+
+.footer-top--body .footer-body--block a:last-of-type { margin-bottom: 0; }
+
+.footer-top--body .footer-body--block a:hover { text-decoration: underline; color: #cccccc; }
+
+.footer-top--body .footer-body--block .footer-link--big { font-size: 13px; line-height: 17px; margin-bottom: 10px; }
+
+.footer-top--body .footer-body--block .footer-text--bg { margin-top: 15px; width: 100%; max-width: 70px; padding-top: 6px; padding-bottom: 6px; text-align: center; font-family: "Sarabun", sans-serif; font-size: 10px; line-height: 13px; color: #091540; background-color: #fff; border-radius: 2px; }
+
+.footer-top--bottom { padding-top: 32px; padding-bottom: 32px; border-top: 2px solid rgba(255, 255, 255, 0.5); position: relative; z-index: 5; }
+
+.footer-top--bottom .footer-bottom--links { display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 25px; }
+
+.footer-top--bottom .footer-bottom--links li { margin-left: 24px; }
+
+.footer-top--bottom .footer-bottom--links li:first-of-type { margin-left: 0; }
+
+.footer-top--bottom .footer-bottom--links a { display: block; transition: 0.4s ease; }
+
+.footer-top--bottom .footer-bottom--links a:hover { transform: scale(1.1); }
+
+.footer-top--bottom .footer-bottom--links img { width: auto; height: auto; max-width: 26px; max-height: 18px; }
+
+.footer-top--bottom p { font-family: Sarabun; width: 100%; text-align: center; margin-bottom: 24px; font-weight: 500; font-size: 12px; line-height: 2; letter-spacing: 0.0857143px; color: rgba(255, 255, 255, 0.7); }
+
+.footer-top--bottom img { width: 50px; height: 50px; margin-left: auto; margin-right: auto; display: block; }
+
+.footer-bottom { padding-top: 24px; padding-bottom: 24px; background: #43425f; }
+
+.footer-bottom--wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+.footer-bottom--wrapper .footer-wrapper--body p { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 8px; line-height: 2.5; text-align: center; color: rgba(255, 255, 255, 0.5); }
+
 .container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; max-width: 1430px; width: 100%; position: relative; }
 
 .js_hidden { display: none !important; }
+
+.mb-mob-0 { margin-bottom: 0 !important; }
 
 /* purgecss end ignore */
 

@@ -1,0 +1,258 @@
+.footer-top {
+  padding-top: 47px;
+  padding-bottom: 32px;
+  background: url(../../images/footer/bg-mobile.jpg) center no-repeat;
+  position: relative;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -65px;
+    top: 0;
+    bottom: 0;
+    background: url(../../images/footer/triangle-bg--mobile.png) center
+      no-repeat;
+    width: 226px;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  &--header {
+    margin-bottom: 82px;
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+
+    h6 {
+      font-family: "Sarabun", sans-serif;
+      font-weight: 500;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba($brand-white, 0.8);
+      position: relative;
+      z-index: 5;
+    }
+
+    h2 {
+      font-family: "Hind Siliguri", sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 1.45;
+      width: 100%;
+      text-align: center;
+      color: $brand-white;
+      text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.3);
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 5;
+    }
+
+    > p {
+      font-family: "Sarabun", sans-serif;
+      font-size: 49px;
+      line-height: 63px;
+      text-align: center;
+      color: $brand-white;
+      letter-spacing: -6px;
+      position: relative;
+      z-index: 5;
+
+      strong {
+        font-weight: bold;
+        font-size: 100px;
+        color: #fa8f68;
+      }
+    }
+
+    span {
+      font-family: "Sarabun", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.58;
+      width: 100%;
+      text-align: center;
+      display: block;
+      color: rgba($brand-white, 0.8);
+      position: relative;
+      z-index: 5;
+    }
+
+    .footer-header--block {
+      padding: 32px 5px;
+      background-color: $brand-white;
+      box-shadow: 0px 2px 4px rgba(93, 88, 88, 0.1);
+      margin-top: 50px;
+      border-radius: 2px;
+
+      span {
+        display: inline-block;
+        margin-bottom: 14px;
+        width: 100%;
+        font-weight: 400;
+        color: #091540;
+        z-index: 5;
+        position: relative;
+      }
+
+      p {
+        font-family: "Sarabun", sans-serif;
+        max-width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 2.25;
+        text-align: center;
+        width: 100%;
+        color: #091540;
+        margin-bottom: 24px;
+        z-index: 5;
+        position: relative;
+      }
+
+      a {
+        max-width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 5;
+        position: relative;
+      }
+    }
+  }
+
+  &--body {
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+
+    .footer-body--block {
+      width: 100%;
+      max-width: 120px;
+      text-align: left;
+      margin-bottom: 35px;
+      h4 {
+        font-family: "Sarabun", sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        color: $brand-white;
+        margin-bottom: 18px;
+      }
+
+      a {
+        font-family: "Sarabun", sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 14px;
+        color: $brand-white;
+        margin-bottom: 15px;
+        display: block;
+        transition: 0.4s ease;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          color: darken($brand-white, 20%);
+        }
+      }
+
+      .footer-link--big {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 10px;
+      }
+      .footer-text--bg {
+        margin-top: 15px;
+        width: 100%;
+        max-width: 70px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+        font-family: "Sarabun", sans-serif;
+        font-size: 10px;
+        line-height: 13px;
+        color: #091540;
+        background-color: $brand-white;
+        border-radius: 2px;
+
+        span {
+        }
+      }
+    }
+  }
+  &--bottom {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 2px solid rgba($brand-white, 0.5);
+    position: relative;
+    z-index: 5;
+
+    .footer-bottom--links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+
+      li {
+        margin-left: 24px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+
+      a {
+        display: block;
+        transition: 0.4s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        width: auto;
+        height: auto;
+        max-width: 26px;
+        max-height: 18px;
+      }
+    }
+
+    p {
+      font-family: Sarabun;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.0857143px;
+      color: rgba($brand-white, 0.7);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+}

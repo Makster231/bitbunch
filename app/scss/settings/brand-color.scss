@@ -5,3 +5,12 @@ $brand-success: #00ab46;
 $brand-danger: #8b2323;
 $brand-warning: #fa8f68;
 $brand-primary: blue;
+$brand-purpule: #8b0bff;
+
+.text-warning {
+  color: $brand-warning;
+}
+
+.text-purpule {
+  color: $brand-purpule;
+}

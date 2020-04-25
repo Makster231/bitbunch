@@ -1,0 +1,23 @@
+.footer-bottom {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #43425f;
+
+  &--wrapper {
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+
+    .footer-wrapper--body {
+      p {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 2.5;
+        text-align: center;
+        color: rgba($brand-white, 0.5);
+      }
+    }
+  }
+}
