@@ -756,7 +756,7 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .statistic-wrapper--body .statistic-body--block p { font-family: "Hind Siliguri", sans-serif; font-weight: 500; font-size: 10px; line-height: 1.6; text-transform: uppercase; color: rgba(255, 255, 255, 0.8); }
 
-.works { padding-top: 48px; padding-bottom: 41px; }
+.works { padding-top: 48px; padding-bottom: 100px; }
 
 .works-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
 
@@ -780,7 +780,7 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .founders { position: relative; padding-bottom: 41px; padding-top: 100px; background: url(../../images/founders/bg-mobile.png) center no-repeat; background-size: cover; }
 
-.founders::before { content: ""; }
+.founders::before { content: ""; position: absolute; top: -50px; left: 0; width: 100%; height: 110px; background: url(../../images/founders/bg-mobile--coupon.png) center no-repeat; background-size: cover; }
 
 .founders-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
 
