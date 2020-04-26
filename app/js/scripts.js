@@ -64,7 +64,9 @@
   }
 
   $(function () {
-    teamSlider();
+    if ($(window).width() < 640) {
+      teamSlider();
+    }
   });
 })(window.jQuery, window, document);
 

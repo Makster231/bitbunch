@@ -1,3 +1,11 @@
-﻿.mb-mob-0{
-  margin-bottom: 0 !important;
+﻿.mb-mob-0 {
+  @media (max-width: $md) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.mr-tablet--0 {
+  @media (min-width: $md) {
+    margin-right: 0 !important;
+  }
 }

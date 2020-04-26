@@ -1,10 +1,23 @@
 .team {
   padding-bottom: 48px;
+  @media (min-width: $md) {
+    padding-bottom: 100px;
+  }
   &-wrapper {
+    @media (min-width: $md) {
+      width: 100%;
+      max-width: calc(100% - 100px);
+      margin-left: auto;
+      margin-right: auto;
+    }
     &--header {
       padding-bottom: 18px;
       box-shadow: 0 1px 2px rgba(93, 88, 88, 0.1);
 
+      @media (min-width: $md) {
+        box-shadow: none;
+        padding-bottom: 48px;
+      }
       h2 {
         font-family: "Hind Siliguri", sans-serif;
         font-weight: 600;
@@ -15,6 +28,12 @@
         display: block;
         color: #43425f;
         margin-bottom: 5px;
+
+        @media (min-width: $md) {
+          font-size: 36px;
+          line-height: 1.28;
+          margin-bottom: 14px;
+        }
       }
 
       p {
@@ -25,6 +44,11 @@
         text-align: center;
         width: 100%;
         color: rgba(#43425f, 0.8);
+
+        @media (min-width: $md) {
+          font-size: 16px;
+          line-height: 1.62;
+        }
       }
     }
 
@@ -33,11 +57,22 @@
       padding-left: 24px;
       padding-bottom: 48px;
 
+      @media (min-width: $md) {
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+
       .team-block--header {
         padding-top: 16px;
         padding-bottom: 22px;
         background: #cad7ff;
         border-radius: 2px 2px 0px 0px;
+
+        @media (min-width: $md) {
+          padding-top: 10px;
+          padding-bottom: 40px;
+        }
       }
 
       .team-block--body {
@@ -50,6 +85,13 @@
         flex-direction: row;
         flex-wrap: nowrap;
         padding-bottom: 28px;
+
+        @media (min-width: $md) {
+          width: 100%;
+          flex-wrap: wrap;
+          padding-bottom: 18px;
+          justify-content: space-between;
+        }
       }
 
       .team-body--block {
@@ -65,6 +107,13 @@
           margin-right: 0;
         }
 
+        @media (min-width: $md) {
+          width: 202px;
+          min-width: 202px;
+          margin-right: 31px;
+          margin-bottom: 30px;
+        }
+
         h3 {
           font-family: "Sarabun", sans-serif;
           font-weight: 500;
@@ -74,6 +123,12 @@
           width: 100%;
           color: #091540;
           margin-bottom: 5px;
+
+          @media (min-width: $md) {
+            font-size: 21px;
+            line-height: 1.48;
+            margin-bottom: 4px;
+          }
         }
 
         h4 {
@@ -84,6 +139,11 @@
           text-align: center;
           text-transform: uppercase;
           color: #091540;
+
+          @media (min-width: $md) {
+            font-size: 12px;
+            line-height: 16px;
+          }
         }
 
         .team-member--img {
@@ -94,6 +154,13 @@
           margin-top: -12px;
           margin-bottom: 10px;
           object-fit: cover;
+
+          @media (min-width: $md) {
+            width: 170px;
+            height: 169px;
+            margin-bottom: 8px;
+            margin-top: -28px;
+          }
         }
 
         p {
@@ -103,6 +170,13 @@
           text-align: center;
           color: #616884;
           margin-bottom: 17px;
+
+          @media (min-width: $md) {
+            font-size: 12px;
+            line-height: 1.67;
+            margin-bottom: 11px;
+            font-weight: 500;
+          }
         }
       }
 
@@ -136,6 +210,10 @@
           background: #324ea3;
           cursor: pointer;
         }
+
+        @media (min-width: $md) {
+          display: none;
+        }
       }
 
       .team-body--links {
@@ -150,6 +228,10 @@
           &:last-of-type {
             margin-right: 0;
           }
+
+          @media (min-width: $md) {
+            margin-right: 24px;
+          }
         }
         img {
           width: 15px;
@@ -158,6 +240,16 @@
 
           &:hover {
             transform: scale(1.1);
+          }
+
+          @media (min-width: $md) {
+            width: 16px;
+            height: 16px;
+            opacity: 0.5;
+
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
@@ -172,7 +264,7 @@
         display: block;
         font-family: "Sarabun", sans-serif;
         font-weight: 600;
-        font-size: 8.4px;
+        font-size: 9px;
         line-height: 11px;
         color: $brand-white;
         padding-top: 7px;
@@ -190,6 +282,14 @@
         &:active {
           transition: 0s;
           background-color: darken(#324ea3, 20%);
+        }
+
+        @media (min-width: $md) {
+          font-size: 14px;
+          line-height: 18px;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          max-width: 166px;
         }
       }
     }

@@ -136,7 +136,9 @@ a { text-decoration: none; }
 
 .bg-color--blue-light { background-color: #5FBBFF; }
 
-.mb-mob-0 { margin-bottom: 0 !important; }
+@media (max-width: 768px) { .mb-mob-0 { margin-bottom: 0 !important; } }
+
+@media (min-width: 768px) { .mr-tablet--0 { margin-right: 0 !important; } }
 
 /* purgecss start ignore */
 .btn { display: block; width: 100%; max-width: 137px; text-align: center; padding-top: 10px; padding-bottom: 10px; font-family: "Sarabun", sans-serif; font-weight: bold; font-size: 12px; line-height: 16px; text-transform: uppercase; color: #fff; background-color: #fa8f68; box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05); border-radius: 1.2px; transition: 0.3s ease; }
@@ -918,31 +920,57 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .team { padding-bottom: 48px; }
 
+@media (min-width: 768px) { .team { padding-bottom: 100px; } }
+
+@media (min-width: 768px) { .team-wrapper { width: 100%; max-width: calc(100% - 100px); margin-left: auto; margin-right: auto; } }
+
 .team-wrapper--header { padding-bottom: 18px; box-shadow: 0 1px 2px rgba(93, 88, 88, 0.1); }
+
+@media (min-width: 768px) { .team-wrapper--header { box-shadow: none; padding-bottom: 48px; } }
 
 .team-wrapper--header h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; width: 100%; display: block; color: #43425f; margin-bottom: 5px; }
 
+@media (min-width: 768px) { .team-wrapper--header h2 { font-size: 36px; line-height: 1.28; margin-bottom: 14px; } }
+
 .team-wrapper--header p { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 1.83; text-align: center; width: 100%; color: rgba(67, 66, 95, 0.8); }
+
+@media (min-width: 768px) { .team-wrapper--header p { font-size: 16px; line-height: 1.62; } }
 
 .team-wrapper--body { padding-top: 15px; padding-left: 24px; padding-bottom: 48px; }
 
+@media (min-width: 768px) { .team-wrapper--body { padding-top: 0; padding-left: 0; padding-bottom: 0; } }
+
 .team-wrapper--body .team-block--header { padding-top: 16px; padding-bottom: 22px; background: #cad7ff; border-radius: 2px 2px 0px 0px; }
+
+@media (min-width: 768px) { .team-wrapper--body .team-block--header { padding-top: 10px; padding-bottom: 40px; } }
 
 .team-wrapper--body .team-block--body { padding-left: 16px; padding-right: 16px; }
 
 .team-wrapper--body .team-body--slider { display: flex; flex-direction: row; flex-wrap: nowrap; padding-bottom: 28px; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--slider { width: 100%; flex-wrap: wrap; padding-bottom: 18px; justify-content: space-between; } }
+
 .team-wrapper--body .team-body--block { width: 216px; min-width: 216px; padding-bottom: 17px; background-color: #fff; box-shadow: 0px 2px 4px rgba(93, 88, 88, 0.1); border-radius: 2px; margin-right: 24px; }
 
 .team-wrapper--body .team-body--block:last-of-type { margin-right: 0; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--block { width: 202px; min-width: 202px; margin-right: 31px; margin-bottom: 30px; } }
+
 .team-wrapper--body .team-body--block h3 { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 14px; line-height: 18px; text-align: center; width: 100%; color: #091540; margin-bottom: 5px; }
+
+@media (min-width: 768px) { .team-wrapper--body .team-body--block h3 { font-size: 21px; line-height: 1.48; margin-bottom: 4px; } }
 
 .team-wrapper--body .team-body--block h4 { font-family: "Sarabun", sans-serif; font-size: 12px; line-height: 16px; width: 100%; text-align: center; text-transform: uppercase; color: #091540; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--block h4 { font-size: 12px; line-height: 16px; } }
+
 .team-wrapper--body .team-body--block .team-member--img { width: 184px; height: 165px; display: block; border-radius: 4px; margin-top: -12px; margin-bottom: 10px; object-fit: cover; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--block .team-member--img { width: 170px; height: 169px; margin-bottom: 8px; margin-top: -28px; } }
+
 .team-wrapper--body .team-body--block p { font-family: "Sarabun", sans-serif; font-size: 10px; line-height: 1.6; text-align: center; color: #616884; margin-bottom: 17px; }
+
+@media (min-width: 768px) { .team-wrapper--body .team-body--block p { font-size: 12px; line-height: 1.67; margin-bottom: 11px; font-weight: 500; } }
 
 .team-wrapper--body .team-body--scroll { -webkit-appearance: none; width: 100%; height: 1px; background: rgba(50, 78, 163, 0.2); outline: none; opacity: 0.7; -webkit-transition: 0.2s; transition: opacity 0.2s; }
 
@@ -952,21 +980,30 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .team-wrapper--body .team-body--scroll::-moz-range-thumb { width: 72px; height: 3px; background: #324ea3; cursor: pointer; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--scroll { display: none; } }
+
 .team-wrapper--body .team-body--links { display: flex; flex-direction: row; justify-content: center; }
 
 .team-wrapper--body .team-body--links a { display: block; margin-right: 17px; }
 
 .team-wrapper--body .team-body--links a:last-of-type { margin-right: 0; }
 
+@media (min-width: 768px) { .team-wrapper--body .team-body--links a { margin-right: 24px; } }
+
 .team-wrapper--body .team-body--links img { width: 15px; height: 15px; transition: 0.3s ease; }
 
 .team-wrapper--body .team-body--links img:hover { transform: scale(1.1); }
 
-.team-wrapper--footer a { width: 100%; max-width: 100px; margin-left: auto; margin-right: auto; display: block; font-family: "Sarabun", sans-serif; font-weight: 600; font-size: 8.4px; line-height: 11px; color: #fff; padding-top: 7px; padding-bottom: 6px; background: #324ea3; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); border-radius: 1.2px; transition: 0.4s ease; text-align: center; }
+@media (min-width: 768px) { .team-wrapper--body .team-body--links img { width: 16px; height: 16px; opacity: 0.5; }
+  .team-wrapper--body .team-body--links img:hover { opacity: 1; } }
+
+.team-wrapper--footer a { width: 100%; max-width: 100px; margin-left: auto; margin-right: auto; display: block; font-family: "Sarabun", sans-serif; font-weight: 600; font-size: 9px; line-height: 11px; color: #fff; padding-top: 7px; padding-bottom: 6px; background: #324ea3; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); border-radius: 1.2px; transition: 0.4s ease; text-align: center; }
 
 .team-wrapper--footer a:hover { box-shadow: none; background-color: #263b7c; }
 
 .team-wrapper--footer a:active { transition: 0s; background-color: #1a2955; }
+
+@media (min-width: 768px) { .team-wrapper--footer a { font-size: 14px; line-height: 18px; padding-top: 11px; padding-bottom: 11px; max-width: 166px; } }
 
 .media { padding-bottom: 48px; }
 
