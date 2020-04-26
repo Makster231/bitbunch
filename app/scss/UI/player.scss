@@ -1261,7 +1261,7 @@ a.plyr__control::before {
 }
 
 .plyr__video-wrapper {
-  background: #000;
+  background: transparent;
   -webkit-border-radius: inherit;
   -moz-border-radius: inherit;
   border-radius: inherit;
@@ -1275,11 +1275,12 @@ a.plyr__control::before {
   height: 0;
   padding-bottom: 164px !important;
 
-  @media screen and (min-width: 960px) {
-    padding-bottom: 750px !important;
-  }
   @media screen and (min-width: 640px) {
     padding-bottom: 378px !important;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding-bottom: 540px !important;
   }
 }
 
@@ -2052,6 +2053,7 @@ button.plyr__control--overlaid {
   button.plyr__control--overlaid {
     height: 56px;
     width: 42px;
+    left: calc(50% - 21px);
   }
 }
 
