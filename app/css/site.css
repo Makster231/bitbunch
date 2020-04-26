@@ -804,23 +804,47 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .statistic { padding-top: 48px; padding-bottom: 91px; background: url(../../images/statistic/bg--mobile.png) center bottom no-repeat; background-size: cover; text-align: center; }
 
+@media (min-width: 768px) { .statistic { padding-top: 80px; padding-bottom: 100px; background-image: url(../../images/statistic/bg--tablet.png); } }
+
 .statistic-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
+
+@media (min-width: 768px) { .statistic-wrapper { max-width: calc(100% - 100px); } }
 
 .statistic-wrapper--header h6 { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 16px; color: rgba(255, 255, 255, 0.8); margin-bottom: 14px; }
 
+@media (min-width: 768px) { .statistic-wrapper--header h6 { font-size: 16px; line-height: 1.62; margin-bottom: 4px; } }
+
 .statistic-wrapper--header h3 { font-family: "Hind Siliguri", sans-serif; font-style: normal; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; color: #fff; text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.3); margin-bottom: 32px; }
 
-.statistic-wrapper--body { display: flex; flex-direction: column; justify-self: center; align-items: center; }
+@media (min-width: 768px) { .statistic-wrapper--header h3 { font-size: 36px; line-height: 1.39; margin-bottom: 40px; } }
+
+.statistic-wrapper--body { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+@media (min-width: 768px) { .statistic-wrapper--body { flex-direction: row; justify-content: space-between; } }
 
 .statistic-wrapper--body .statistic-body--block { display: flex; flex-direction: column; margin-bottom: 36px; }
 
 .statistic-wrapper--body .statistic-body--block:last-of-type { margin-bottom: 0; }
 
+@media (min-width: 768px) { .statistic-wrapper--body .statistic-body--block { margin-bottom: 0; }
+  .statistic-wrapper--body .statistic-body--block:first-of-type img { margin-left: 0; }
+  .statistic-wrapper--body .statistic-body--block:first-of-type h5 { margin-left: 0; margin-right: auto; }
+  .statistic-wrapper--body .statistic-body--block:first-of-type p { margin-left: 0; margin-right: auto; }
+  .statistic-wrapper--body .statistic-body--block:last-of-type img { margin-right: 0; }
+  .statistic-wrapper--body .statistic-body--block:last-of-type h5 { margin-right: 0; margin-left: auto; }
+  .statistic-wrapper--body .statistic-body--block:last-of-type p { margin-right: 0; margin-left: auto; } }
+
 .statistic-wrapper--body .statistic-body--block img { width: 35px; height: 35px; margin-bottom: 9px; margin-left: auto; margin-right: auto; }
+
+@media (min-width: 768px) { .statistic-wrapper--body .statistic-body--block img { width: 50px; height: 50px; margin-bottom: 24px; } }
 
 .statistic-wrapper--body .statistic-body--block h5 { font-family: "Hind Siliguri", sans-serif; font-size: 22px; line-height: 36px; color: #fff; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); }
 
+@media (min-width: 768px) { .statistic-wrapper--body .statistic-body--block h5 { font-size: 32px; line-height: 1.31; margin-bottom: 8px; } }
+
 .statistic-wrapper--body .statistic-body--block p { font-family: "Hind Siliguri", sans-serif; font-weight: 500; font-size: 10px; line-height: 1.6; text-transform: uppercase; color: rgba(255, 255, 255, 0.8); }
+
+@media (min-width: 768px) { .statistic-wrapper--body .statistic-body--block p { font-size: 16px; } }
 
 .works { padding-top: 48px; padding-bottom: 100px; }
 
