@@ -30,7 +30,9 @@
   }
 
   $(function () {
-    mediaSlider();
+    if ($(window).width() < 640) {
+      mediaSlider();
+    }
   });
 })(window.jQuery, window, document);
 
