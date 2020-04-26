@@ -762,21 +762,29 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 @media (min-width: 768px) { .benefits { padding-top: 80px; padding-bottom: 80px; } }
 
-@media (min-width: 992px) { .benefits { padding-top: 160px; padding-bottom: 160px; margin-right: -170px; } }
+@media (min-width: 992px) { .benefits { padding-top: 160px; padding-bottom: 160px; } }
+
+@media (min-width: 1200px) { .benefits { margin-right: -170px; } }
 
 .benefits h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; color: #43425f; margin-bottom: 32px; }
 
 @media (min-width: 768px) { .benefits h2 { font-size: 36px; margin-bottom: 48px; line-height: 1.28; } }
 
-@media (min-width: 992px) { .benefits h2 { font-size: 46px; line-height: 1.35; margin-bottom: 70px; max-width: 1310px; margin-left: auto; margin-right: auto; text-align: left; } }
+@media (min-width: 992px) { .benefits h2 { font-size: 46px; line-height: 1.35; margin-bottom: 70px; max-width: calc(100% - 100px); margin-left: auto; margin-right: auto; text-align: left; } }
+
+@media (min-width: 1200px) { .benefits h2 { max-width: 1310px; } }
 
 .benefits-wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
 
 @media (min-width: 768px) { .benefits-wrapper { max-width: calc(100% - 100px); } }
 
-@media (min-width: 992px) { .benefits-wrapper { display: flex; max-width: 1310px; flex-direction: row-reverse; justify-content: space-between; } }
+@media (min-width: 992px) { .benefits-wrapper { display: flex; flex-direction: row-reverse; justify-content: space-between; } }
 
-@media (min-width: 992px) { .benefits-wrapper--header { width: 100%; max-width: 744px; padding-left: 132px; } }
+@media (min-width: 1200px) { .benefits-wrapper { max-width: 1310px; } }
+
+@media (min-width: 992px) { .benefits-wrapper--header { width: 100%; max-width: 500px; padding-left: 50px; } }
+
+@media (min-width: 1200px) { .benefits-wrapper--header { width: 100%; max-width: 744px; padding-left: 132px; } }
 
 .benefits-wrapper--header .benefits-header--block { padding: 18px; margin-bottom: 18px; background: #fff; box-shadow: 8px 9px 18px rgba(80, 87, 94, 0.1); border-radius: 2px; display: flex; flex-direction: row; }
 
@@ -786,8 +794,10 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
   .benefits-wrapper--header .benefits-header--block:nth-of-type(even) { margin-left: 0; margin-right: auto; }
   .benefits-wrapper--header .benefits-header--block:last-of-type { margin-bottom: 48px; } }
 
-@media (min-width: 992px) { .benefits-wrapper--header .benefits-header--block { margin-bottom: 30px; margin-right: 50px; padding: 20px 24px; }
+@media (min-width: 992px) { .benefits-wrapper--header .benefits-header--block { margin-bottom: 30px; margin-right: 0; padding: 20px 24px; }
   .benefits-wrapper--header .benefits-header--block:nth-of-type(even) { margin-bottom: 55px; } }
+
+@media (min-width: 1200px) { .benefits-wrapper--header .benefits-header--block { margin-right: 50px; } }
 
 .benefits-wrapper--header .benefits-header--block img { width: 36px; height: 36px; }
 
@@ -1302,11 +1312,13 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 @media (min-width: 768px) { .footer-top--body .footer-body--block .footer-text--bg { max-width: 80px; padding-top: 4px; padding-bottom: 4px; font-size: 12px; line-height: 16px; } }
 
-.footer-top--bottom { padding-top: 32px; padding-bottom: 32px; border-top: 2px solid rgba(255, 255, 255, 0.5); position: relative; z-index: 5; }
+.footer-top--bottom { border-top: 2px solid rgba(255, 255, 255, 0.5); }
 
-@media (min-width: 768px) { .footer-top--bottom { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding-left: 50px; padding-right: 50px; padding-bottom: 0; } }
+.footer-top--bottom .footer-bottom--wrapper { padding-top: 32px; position: relative; z-index: 5; width: 100%; max-width: calc(100% - 48px); margin-left: auto; margin-right: auto; }
 
-@media (min-width: 992px) { .footer-top--bottom { padding-top: 30px; } }
+@media (min-width: 768px) { .footer-top--bottom .footer-bottom--wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding-left: 50px; padding-right: 50px; padding-bottom: 0; max-width: calc(100% - 100px); } }
+
+@media (min-width: 992px) { .footer-top--bottom .footer-bottom--wrapper { padding-top: 30px; max-width: 1140px; } }
 
 .footer-top--bottom .footer-bottom--links { display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 25px; }
 
