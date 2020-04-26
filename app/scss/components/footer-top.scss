@@ -23,6 +23,17 @@
       opacity: 0.1;
       right: 0;
     }
+
+    @media (min-width: $lg) {
+      opacity: 1;
+      right: -50px;
+      width: 530px;
+      background-image: url(../../images/footer/triangle-bg--desktop.png);
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 77px;
   }
 
   &--header {
@@ -35,6 +46,11 @@
     @media (min-width: $md) {
       margin-bottom: 142px;
       max-width: calc(100% - 100px);
+    }
+
+    @media (min-width: $lg) {
+      max-width: 1140px;
+      margin-bottom: 179px;
     }
 
     h6 {
@@ -54,6 +70,12 @@
         line-height: 1.62;
         margin-bottom: 5px;
       }
+
+      @media (min-width: $lg) {
+        font-size: 18px;
+        line-height: 1.72;
+        margin-bottom: 2px;
+      }
     }
 
     h2 {
@@ -72,6 +94,12 @@
       @media (min-width: $md) {
         font-size: 36px;
         line-height: 1.39;
+      }
+
+      @media (min-width: $lg) {
+        font-size: 46px;
+        line-height: 1.52;
+        margin-bottom: 30px;
       }
     }
 
@@ -117,6 +145,11 @@
         font-size: 16px;
         line-height: 1.62;
       }
+
+      @media (min-width: $lg) {
+        font-size: 18px;
+        line-height: 1.72;
+      }
     }
 
     .footer-header--block {
@@ -132,6 +165,20 @@
         padding-bottom: 24px;
       }
 
+      @media (min-width: $lg) {
+        margin-top: 50px;
+        padding: 31px 31px 27px 32px;
+      }
+
+      .footer-block--wrapper {
+        @media (min-width: $lg) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
       span {
         display: inline-block;
         margin-bottom: 14px;
@@ -145,6 +192,13 @@
           font-size: 16px;
           line-height: 1.62;
           margin-bottom: 8px;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 18px;
+          line-height: 23px;
+          margin-bottom: 3px;
+          text-align: left;
         }
       }
 
@@ -168,6 +222,14 @@
           line-height: 1.36;
           max-width: 404px;
           margin-bottom: 37px;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 36px;
+          line-height: 1.39;
+          max-width: 692px;
+          margin-bottom: 18px;
+          text-align: left;
         }
       }
 
@@ -201,6 +263,18 @@
             }
           }
         }
+
+        @media (min-width: $lg) {
+          margin-bottom: 0;
+          margin-right: 0;
+          margin-top: 25px;
+
+          &.footer-block--link {
+            margin-left: 0;
+            text-align: left;
+            margin-top: 0;
+          }
+        }
       }
     }
   }
@@ -221,6 +295,11 @@
     @media (min-width: $md) {
       padding-bottom: 115px;
       max-width: calc(100% - 100px);
+    }
+
+    @media (min-width: $lg) {
+      padding-bottom: 170px;
+      max-width: 1140px;
     }
 
     .footer-body--block {
@@ -250,6 +329,12 @@
           line-height: 27px;
           margin-bottom: 38px;
         }
+
+        @media (min-width: $lg) {
+          font-size: 22px;
+          line-height: 29px;
+          margin-bottom: 36px;
+        }
       }
 
       a {
@@ -261,6 +346,7 @@
         margin-bottom: 15px;
         display: block;
         transition: 0.4s ease;
+
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -274,6 +360,15 @@
           font-size: 14px;
           line-height: 18px;
           margin-bottom: 14px;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 15px;
+          line-height: 19px;
+          margin-bottom: 13px;
+          max-width: 150px;
+          max-width: max-content;
+          margin-left: auto;
         }
       }
 
@@ -290,6 +385,11 @@
           &:last-of-type {
             margin-bottom: 11px;
           }
+        }
+
+        @media (min-width: $lg) {
+          margin-right: auto;
+          margin-left: 0;
         }
       }
       .footer-text--bg {
@@ -331,6 +431,10 @@
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 0;
+    }
+
+    @media (min-width: $lg) {
+      padding-top: 30px;
     }
 
     .footer-bottom--links {
