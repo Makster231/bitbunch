@@ -2,12 +2,20 @@
   padding-top: 24px;
   padding-bottom: 24px;
   background: #43425f;
+  @media (min-width: $md) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   &--wrapper {
     width: 100%;
     max-width: calc(100% - 48px);
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-width: $md) {
+      max-width: calc(100% - 100px);
+    }
 
     .footer-wrapper--body {
       p {
@@ -17,6 +25,11 @@
         line-height: 2.5;
         text-align: center;
         color: rgba($brand-white, 0.5);
+
+        @media (min-width: $md) {
+          font-size: 10px;
+          line-height: 1.9;
+        }
       }
     }
   }

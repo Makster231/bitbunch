@@ -9,3 +9,10 @@
     margin-right: 0 !important;
   }
 }
+
+.hidden-then--md {
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+  }
+}
