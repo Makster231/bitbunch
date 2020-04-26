@@ -1,0 +1,196 @@
+.team {
+  padding-bottom: 48px;
+  &-wrapper {
+    &--header {
+      padding-bottom: 18px;
+      box-shadow: 0 1px 2px rgba(93, 88, 88, 0.1);
+
+      h2 {
+        font-family: "Hind Siliguri", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.45;
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: #43425f;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: "Sarabun", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        text-align: center;
+        width: 100%;
+        color: rgba(#43425f, 0.8);
+      }
+    }
+
+    &--body {
+      padding-top: 15px;
+      padding-left: 24px;
+      padding-bottom: 48px;
+
+      .team-block--header {
+        padding-top: 16px;
+        padding-bottom: 22px;
+        background: #cad7ff;
+        border-radius: 2px 2px 0px 0px;
+      }
+
+      .team-block--body {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .team-body--slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 28px;
+      }
+
+      .team-body--block {
+        width: 216px;
+        min-width: 216px;
+        padding-bottom: 17px;
+        background-color: $brand-white;
+        box-shadow: 0px 2px 4px rgba(93, 88, 88, 0.1);
+        border-radius: 2px;
+        margin-right: 24px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        h3 {
+          font-family: "Sarabun", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          width: 100%;
+          color: #091540;
+          margin-bottom: 5px;
+        }
+
+        h4 {
+          font-family: "Sarabun", sans-serif;
+          font-size: 12px;
+          line-height: 16px;
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          color: #091540;
+        }
+
+        .team-member--img {
+          width: 184px;
+          height: 165px;
+          display: block;
+          border-radius: 4px;
+          margin-top: -12px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-family: "Sarabun", sans-serif;
+          font-size: 10px;
+          line-height: 1.6;
+          text-align: center;
+          color: #616884;
+          margin-bottom: 17px;
+        }
+      }
+
+      .team-body--scroll {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 1px;
+        background: rgba(#324ea3, 0.2);
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 72px;
+          height: 3px;
+          background: #324ea3;
+          cursor: pointer;
+          border-radius: 2px;
+        }
+
+        &::-moz-range-thumb {
+          width: 72px;
+          height: 3px;
+          background: #324ea3;
+          cursor: pointer;
+        }
+      }
+
+      .team-body--links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          display: block;
+          margin-right: 17px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+        img {
+          width: 15px;
+          height: 15px;
+          transition: 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &--footer {
+      a {
+        width: 100%;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-family: "Sarabun", sans-serif;
+        font-weight: 600;
+        font-size: 8.4px;
+        line-height: 11px;
+        color: $brand-white;
+        padding-top: 7px;
+        padding-bottom: 6px;
+        background: #324ea3;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 1.2px;
+        transition: 0.4s ease;
+        text-align: center;
+
+        &:hover {
+          box-shadow: none;
+          background-color: darken(#324ea3, 10%);
+        }
+        &:active {
+          transition: 0s;
+          background-color: darken(#324ea3, 20%);
+        }
+      }
+    }
+  }
+}

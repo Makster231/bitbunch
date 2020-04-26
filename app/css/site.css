@@ -666,9 +666,9 @@ body { background-color: #fafbff; }
 
 *::-webkit-scrollbar { width: 10px; }
 
-*::-webkit-scrollbar-track { background: #1f1f1f; box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.14); }
+*::-webkit-scrollbar-track { background: #e1e1e1; box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.14); }
 
-*::-webkit-scrollbar-thumb { border-radius: 10px; background: #8b2323; box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.16); }
+*::-webkit-scrollbar-thumb { border-radius: 10px; background: #324EA3; box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.16); }
 
 strong { font-weight: bold; }
 
@@ -681,6 +681,12 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 .wrapper-page > * { width: 100%; }
 
 .wrapper-page .main-page { flex: 1 0 auto; }
+
+.container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; max-width: 1430px; width: 100%; position: relative; }
+
+.js_hidden { display: none !important; }
+
+.mb-mob-0 { margin-bottom: 0 !important; }
 
 .entry { position: relative; padding-top: 34px; background: url(../../images/header/header-bg--mobile.png) center no-repeat; background-size: cover; }
 
@@ -782,7 +788,7 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 .works-wrapper--footer a:last-of-type:hover { text-decoration: underline; }
 
-.founders { position: relative; padding-bottom: 41px; padding-top: 100px; background: url(../../images/founders/bg-mobile.png) center no-repeat; background-size: cover; }
+.founders { position: relative; padding-bottom: 48px; padding-top: 100px; background: url(../../images/founders/bg-mobile.png) center no-repeat; background-size: cover; }
 
 .founders::before { content: ""; position: absolute; top: -50px; left: 0; width: 100%; height: 110px; background: url(../../images/founders/bg-mobile--coupon.png) center no-repeat; background-size: cover; }
 
@@ -795,6 +801,58 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 .founders-wrapper--header p { width: 100%; max-width: 250px; margin-left: auto; margin-right: auto; font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 1.83; text-align: center; color: #fff; }
 
 .founders-wrapper--body .founders-body--media { overflow: hidden; border-radius: 7px; }
+
+.team { padding-bottom: 48px; }
+
+.team-wrapper--header { padding-bottom: 18px; box-shadow: 0 1px 2px rgba(93, 88, 88, 0.1); }
+
+.team-wrapper--header h2 { font-family: "Hind Siliguri", sans-serif; font-weight: 600; font-size: 22px; line-height: 1.45; text-align: center; width: 100%; display: block; color: #43425f; margin-bottom: 5px; }
+
+.team-wrapper--header p { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 12px; line-height: 1.83; text-align: center; width: 100%; color: rgba(67, 66, 95, 0.8); }
+
+.team-wrapper--body { padding-top: 15px; padding-left: 24px; padding-bottom: 48px; }
+
+.team-wrapper--body .team-block--header { padding-top: 16px; padding-bottom: 22px; background: #cad7ff; border-radius: 2px 2px 0px 0px; }
+
+.team-wrapper--body .team-block--body { padding-left: 16px; padding-right: 16px; }
+
+.team-wrapper--body .team-body--slider { display: flex; flex-direction: row; flex-wrap: nowrap; padding-bottom: 28px; }
+
+.team-wrapper--body .team-body--block { width: 216px; min-width: 216px; padding-bottom: 17px; background-color: #fff; box-shadow: 0px 2px 4px rgba(93, 88, 88, 0.1); border-radius: 2px; margin-right: 24px; }
+
+.team-wrapper--body .team-body--block:last-of-type { margin-right: 0; }
+
+.team-wrapper--body .team-body--block h3 { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 14px; line-height: 18px; text-align: center; width: 100%; color: #091540; margin-bottom: 5px; }
+
+.team-wrapper--body .team-body--block h4 { font-family: "Sarabun", sans-serif; font-size: 12px; line-height: 16px; width: 100%; text-align: center; text-transform: uppercase; color: #091540; }
+
+.team-wrapper--body .team-body--block .team-member--img { width: 184px; height: 165px; display: block; border-radius: 4px; margin-top: -12px; margin-bottom: 10px; }
+
+.team-wrapper--body .team-body--block p { font-family: "Sarabun", sans-serif; font-size: 10px; line-height: 1.6; text-align: center; color: #616884; margin-bottom: 17px; }
+
+.team-wrapper--body .team-body--scroll { -webkit-appearance: none; width: 100%; height: 1px; background: rgba(50, 78, 163, 0.2); outline: none; opacity: 0.7; -webkit-transition: 0.2s; transition: opacity 0.2s; }
+
+.team-wrapper--body .team-body--scroll:hover { opacity: 1; }
+
+.team-wrapper--body .team-body--scroll::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 72px; height: 3px; background: #324ea3; cursor: pointer; border-radius: 2px; }
+
+.team-wrapper--body .team-body--scroll::-moz-range-thumb { width: 72px; height: 3px; background: #324ea3; cursor: pointer; }
+
+.team-wrapper--body .team-body--links { display: flex; flex-direction: row; justify-content: center; }
+
+.team-wrapper--body .team-body--links a { display: block; margin-right: 17px; }
+
+.team-wrapper--body .team-body--links a:last-of-type { margin-right: 0; }
+
+.team-wrapper--body .team-body--links img { width: 15px; height: 15px; transition: 0.3s ease; }
+
+.team-wrapper--body .team-body--links img:hover { transform: scale(1.1); }
+
+.team-wrapper--footer a { width: 100%; max-width: 100px; margin-left: auto; margin-right: auto; display: block; font-family: "Sarabun", sans-serif; font-weight: 600; font-size: 8.4px; line-height: 11px; color: #fff; padding-top: 7px; padding-bottom: 6px; background: #324ea3; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); border-radius: 1.2px; transition: 0.4s ease; text-align: center; }
+
+.team-wrapper--footer a:hover { box-shadow: none; background-color: #263b7c; }
+
+.team-wrapper--footer a:active { transition: 0s; background-color: #1a2955; }
 
 .footer-top { padding-top: 47px; padding-bottom: 32px; background: url(../../images/footer/bg-mobile.jpg) center no-repeat; position: relative; background-size: cover; }
 
@@ -859,12 +917,6 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 .footer-bottom--wrapper { width: 100%; max-width: calc(100% - 48px); margin-right: auto; margin-left: auto; }
 
 .footer-bottom--wrapper .footer-wrapper--body p { font-family: "Sarabun", sans-serif; font-weight: 500; font-size: 8px; line-height: 2.5; text-align: center; color: rgba(255, 255, 255, 0.5); }
-
-.container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; max-width: 1430px; width: 100%; position: relative; }
-
-.js_hidden { display: none !important; }
-
-.mb-mob-0 { margin-bottom: 0 !important; }
 
 /* purgecss end ignore */
 
