@@ -5,6 +5,13 @@
   background: url(../../images/founders/bg-mobile.png) center top no-repeat;
   background-size: 100% 100%;
 
+  @media (min-width: $md) {
+    background-image: url(../../images/founders/bg-tablet.png);
+    padding-bottom: 80px;
+    padding-top: 250px;
+    background-size: 100% 90%;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -26,6 +33,14 @@
       top: -72px;
       transform: rotate(2deg);
     }
+
+    @media (min-width: $md) {
+      background-image: url(../../images/founders/bg-tablet--coupon.png);
+      transform: none;
+      height: 350px;
+      top: -90px;
+      z-index: -1;
+    }
   }
 
   &-wrapper {
@@ -34,8 +49,16 @@
     margin-right: auto;
     margin-left: auto;
 
+    @media (min-width: $md) {
+      max-width: calc(100% - 100px);
+    }
+
     &--header {
       margin-bottom: 32px;
+
+      @media (min-width: $md) {
+        margin-bottom: 48px;
+      }
       h2 {
         font-family: "Hind Siliguri", sans-serif;
         font-weight: 600;
@@ -45,6 +68,12 @@
         color: $brand-white;
         margin-bottom: 5px;
         text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.3);
+
+        @media (min-width: $md) {
+          font-size: 36px;
+          line-height: 1.28;
+          margin-bottom: 14px;
+        }
       }
 
       p {
@@ -58,6 +87,13 @@
         line-height: 1.83;
         text-align: center;
         color: $brand-white;
+
+        @media (min-width: $md) {
+          font-size: 16px;
+          line-height: 1.62;
+          color: rgba($brand-white, 0.8);
+          max-width: 490px;
+        }
       }
     }
 
