@@ -3,6 +3,9 @@
   @media (min-width: $md) {
     padding-bottom: 100px;
   }
+  @media (min-width: $lg) {
+    padding-bottom: 118px;
+  }
   &-wrapper {
     @media (min-width: $md) {
       width: 100%;
@@ -10,13 +13,18 @@
       margin-left: auto;
       margin-right: auto;
     }
+    @media (min-width: $xl) {
+      max-width: 1140px;
+    }
     &--header {
       padding-bottom: 18px;
-      box-shadow: 0 1px 2px rgba(93, 88, 88, 0.1);
-
+      box-shadow: 0 2px 1px rgba(93, 88, 88, 0.1);
       @media (min-width: $md) {
         box-shadow: none;
         padding-bottom: 48px;
+      }
+      @media (min-width: $lg) {
+        padding-bottom: 70px;
       }
       h2 {
         font-family: "Hind Siliguri", sans-serif;
@@ -34,6 +42,11 @@
           line-height: 1.28;
           margin-bottom: 14px;
         }
+
+        @media (min-width: $lg) {
+          font-size: 46px;
+          line-height: 1.35;
+        }
       }
 
       p {
@@ -48,6 +61,11 @@
         @media (min-width: $md) {
           font-size: 16px;
           line-height: 1.62;
+        }
+
+        @media (min-width: $lg) {
+          font-size: 18px;
+          line-height: 1.72;
         }
       }
     }
@@ -73,6 +91,11 @@
           padding-top: 10px;
           padding-bottom: 40px;
         }
+
+        @media (min-width: $md) {
+          padding-top: 13px;
+          padding-bottom: 64px;
+        }
       }
 
       .team-block--body {
@@ -91,6 +114,10 @@
           flex-wrap: wrap;
           padding-bottom: 18px;
           justify-content: space-between;
+        }
+
+        @media (min-width: $lg) {
+          padding-bottom: 12px;
         }
       }
 
@@ -114,6 +141,17 @@
           margin-bottom: 30px;
         }
 
+        @media (min-width: $lg) {
+          width: 100%;
+          max-width: 210px;
+          margin-right: 0;
+        }
+
+        @media (min-width: $xl) {
+          max-width: 263px;
+          margin-right: 29px;
+        }
+
         h3 {
           font-family: "Sarabun", sans-serif;
           font-weight: 500;
@@ -127,7 +165,11 @@
           @media (min-width: $md) {
             font-size: 21px;
             line-height: 1.48;
-            margin-bottom: 4px;
+          }
+          @media (min-width: $lg) {
+            font-size: 24px;
+            line-height: 31px;
+            font-weight: 600;
           }
         }
 
@@ -144,11 +186,18 @@
             font-size: 12px;
             line-height: 16px;
           }
+          @media (min-width: $lg) {
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: capitalize;
+          }
         }
 
         .team-member--img {
-          width: 184px;
-          height: 165px;
+          height: 100%;
+          width: 100%;
+          max-width: 184px;
+          max-height: 165px;
           display: block;
           border-radius: 4px;
           margin-top: -12px;
@@ -156,10 +205,17 @@
           object-fit: cover;
 
           @media (min-width: $md) {
-            width: 170px;
-            height: 169px;
+            max-width: 170px;
+            max-height: 169px;
             margin-bottom: 8px;
             margin-top: -28px;
+          }
+
+          @media (min-width: $lg) {
+            max-width: 231px;
+            max-height: 230px;
+            margin-bottom: 10px;
+            margin-top: -54px;
           }
         }
 
@@ -176,6 +232,12 @@
             line-height: 1.67;
             margin-bottom: 11px;
             font-weight: 500;
+          }
+
+          @media (min-width: $lg) {
+            max-width: 190px;
+            margin-left: auto;
+            margin-right: auto;
           }
         }
       }
@@ -290,6 +352,10 @@
           padding-top: 11px;
           padding-bottom: 11px;
           max-width: 166px;
+        }
+
+        @media (min-width: $lg) {
+          display: none;
         }
       }
     }

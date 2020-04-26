@@ -5,7 +5,12 @@
 }
 
 .mr-tablet--0 {
-  @media (min-width: $md) {
+  @media (min-width: $md) and (max-width: $smaller-then-xl) {
+    margin-right: 0 !important;
+  }
+}
+.mr-desktop--0 {
+  @media (min-width: $xl) {
     margin-right: 0 !important;
   }
 }

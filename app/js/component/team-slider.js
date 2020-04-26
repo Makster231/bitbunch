@@ -4,7 +4,7 @@
       container: $(".js_team-body--slider"),
       scroll: $(".js_team-body--scroll"),
       item: $(".js_team-slider--block"),
-      item_width: $(".js_team-slider--block").width(),
+      item_width: $(".js_team-slider--block").outerWidth(),
       item_length: $(".js_team-slider--block").length,
       margin: 24,
     };

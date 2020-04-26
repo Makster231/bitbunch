@@ -6,7 +6,7 @@
       container: $(".js_media-body--slider"),
       scroll: $(".js_media-body--scroll"),
       item: $(".js_media-slider--block"),
-      item_width: $(".js_media-slider--block").width(),
+      item_width: $(".js_media-slider--block").outerWidth(),
       item_length: $(".js_media-slider--block").length,
       margin: 10
     };
@@ -20,7 +20,7 @@
     container.css({
       width: $media_slider_width + "px"
     });
-    scroll.attr("max", $media_slider_width - $(window).width() + margin * 2);
+    scroll.attr("max", $media_slider_width - $(window).width() + 48);
     scroll.on("input change", function () {
       var $this = $(this);
       container.css({
@@ -42,7 +42,7 @@
       container: $(".js_team-body--slider"),
       scroll: $(".js_team-body--scroll"),
       item: $(".js_team-slider--block"),
-      item_width: $(".js_team-slider--block").width(),
+      item_width: $(".js_team-slider--block").outerWidth(),
       item_length: $(".js_team-slider--block").length,
       margin: 24
     };
