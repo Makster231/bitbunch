@@ -20,7 +20,7 @@
     container.css({
       width: $media_slider_width + "px"
     });
-    scroll.attr("max", $media_slider_width);
+    scroll.attr("max", $media_slider_width - $(window).width() + margin * 2);
     scroll.on("input change", function () {
       var $this = $(this);
       container.css({
@@ -56,7 +56,7 @@
     container.css({
       width: $team_slider_width + "px"
     });
-    scroll.attr("max", $team_slider_width - item_width - margin * 2);
+    scroll.attr("max", $team_slider_width - $(window).width() + margin * 2);
     scroll.on("input change", function () {
       var $this = $(this);
       container.css({
