@@ -49,8 +49,11 @@
     }
 
     @media (min-width: $lg) {
-      max-width: 1140px;
       margin-bottom: 179px;
+    }
+
+    @media (min-width: $xl) {
+      max-width: 1140px;
     }
 
     h6 {
@@ -299,6 +302,9 @@
 
     @media (min-width: $lg) {
       padding-bottom: 170px;
+    }
+
+    @media (min-width: $xl) {
       max-width: 1140px;
     }
 
