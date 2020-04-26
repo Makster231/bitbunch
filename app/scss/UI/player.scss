@@ -1273,13 +1273,13 @@ a.plyr__control::before {
 .plyr__video-embed,
 .plyr__video-wrapper--fixed-ratio {
   height: 0;
-  padding-bottom: 750px !important;
+  padding-bottom: 164px !important;
 
-  @media screen and (max-width: 960px) {
-    padding-bottom: 500px !important;
+  @media screen and (min-width: 960px) {
+    padding-bottom: 750px !important;
   }
-  @media screen and (max-width: 640px) {
-    padding-bottom: 164px !important;
+  @media screen and (min-width: 640px) {
+    padding-bottom: 378px !important;
   }
 }
 
@@ -2050,8 +2050,8 @@ button.plyr__control--overlaid {
 
 @media (min-width: 768px) {
   button.plyr__control--overlaid {
-    height: 90px;
-    width: 90px;
+    height: 56px;
+    width: 42px;
   }
 }
 
@@ -2071,13 +2071,13 @@ button.plyr__control--overlaid svg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
   button.plyr__control--overlaid svg {
-    height: 90px;
-    width: 90px;
+    height: 56px;
+    width: 42px;
   }
 }
 

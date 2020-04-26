@@ -1,8 +1,12 @@
 ﻿.entry {
   position: relative;
   padding-top: 34px;
-  background: url(../../images/header/header-bg--mobile.png) center no-repeat;
+  background: url(../../images/header/bg-mobile.png) center no-repeat;
   background-size: cover;
+
+  @media (min-width: $md) {
+    background-image: url(../../images/header/bg-tablet.jpg);
+  }
 
   &::after {
     content: "";
@@ -20,6 +24,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media (min-width: $md) {
+      max-width: calc(100% - 100px);
+    }
+
     &--header {
       display: flex;
       flex-direction: row;
@@ -27,10 +35,19 @@
       align-items: center;
       margin-bottom: 36px;
 
+      @media (min-width: $md) {
+        margin-bottom: 70px;
+      }
+
       .entry-header--logo {
         img {
           width: 122px;
           height: 34px;
+
+          @media (min-width: $md) {
+            width: 179px;
+            height: 50px;
+          }
         }
       }
 
@@ -52,16 +69,28 @@
         text-shadow: 0px 1px 3px rgba(27, 48, 110, 0.5);
         margin-bottom: 16px;
         display: block;
+
+        @media (min-width: $md) {
+          font-size: 40px;
+          margin-bottom: 24px;
+        }
       }
 
       .entry-body--video {
         margin-bottom: 16px;
         overflow: hidden;
         border-radius: 7px;
+
+        @media (min-width: $md) {
+          margin-bottom: 24px;
+        }
       }
 
       ul {
         margin-bottom: 32px;
+        @media (min-width: $md) {
+          margin-bottom: 48px;
+        }
 
         li {
           position: relative;
@@ -73,6 +102,12 @@
           line-height: 1.5;
           color: $brand-white;
 
+          @media (min-width: $md) {
+            font-size: 18px;
+            padding-left: 46px;
+            margin-bottom: 17px;
+          }
+
           &::before {
             content: "";
             position: absolute;
@@ -82,31 +117,60 @@
             height: 17px;
             background: url(../../images/header/icon-check.png) center no-repeat;
             background-size: contain;
+
+            @media (min-width: $md) {
+              width: 28px;
+              height: 28px;
+            }
           }
         }
       }
 
       .btn {
         margin-bottom: 28px;
+        @media (min-width: $md) {
+          margin-bottom: 58px;
+        }
       }
     }
 
     &--footer {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          opacity: 0.6;
+          display: block;
+          width: 100%;
+          margin-bottom: 25px;
+          max-width: 26%;
+          transition: 0.3s ease;
+          &:hover {
+            opacity: 1;
+          }
+          @media (min-width: $md) {
+            max-width: 12%;
+          }
+        }
+        a {
+          display: block;
+        }
+      }
 
-      a {
-        width: 100%;
-        max-width: 26%;
-        margin-bottom: 25px;
-        opacity: 0.6;
-        transition: 0.3s ease;
+      p {
+        display: none;
 
-        &:hover {
-          opacity: 1;
+        @media (min-width: $md) {
+          display: block;
+          font-family: "Sarabun", sans-serif;
+          font-weight: 500;
+          font-size: 12px;
+          margin-bottom: 48px;
+          line-height: 2;
+          color: $brand-white;
         }
       }
     }
