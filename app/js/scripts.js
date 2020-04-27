@@ -128,19 +128,35 @@
 (function ($, window, document) {
   $(function () {
     //show content after loaded page
-    $("body").css("opacity", "1"); // activate plyr player
+    $("body").css("opacity", "1"); // vars to check userAgent
 
-    var players = Array.from(document.querySelectorAll(".js_player")).map(function (p) {
-      return new Plyr(p, {
-        fullscreen: {
-          enabled: false
-        }
+    var userAgent = navigator.userAgent.toLowerCase();
+    var InternetExplorer = false; // check IE userAgent
+
+    if (/mozilla/.test(userAgent) && !/firefox/.test(userAgent) && !/chrome/.test(userAgent) && !/safari/.test(userAgent) && !/opera/.test(userAgent) || /msie/.test(userAgent)) {
+      InternetExplorer = true;
+    }
+
+    if (!InternetExplorer) {
+      // activate plyr player
+      var players = Array.from(document.querySelectorAll(".js_player")).map(function (p) {
+        return new Plyr(p, {
+          fullscreen: {
+            enabled: false
+          }
+        });
+      }); // lazy load images
+
+      $(".lazy").Lazy({
+        threshold: 900
       });
-    }); // lazy load images
-
-    $(".lazy").Lazy({
-      threshold: 900
-    });
+    } else {
+      $("img").each(function () {
+        var $img_src = $(this);
+        $img_src.attr("src", $img_src.attr("data-src"));
+        $img_src.removeAttr("data-src");
+      });
+    }
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=scripts.js.map
