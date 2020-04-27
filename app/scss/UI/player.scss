@@ -124,7 +124,6 @@
   font-weight: 500;
   line-height: 1.7;
   max-width: 100%;
-  max-height: auto;
   min-width: 200px;
   position: relative;
   text-shadow: none;
@@ -1056,7 +1055,6 @@ a.plyr__control::before {
 
 .plyr__poster {
   max-width: 100%;
-  max-height: auto;
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1292,7 +1290,6 @@ a.plyr__control::before {
 .plyr__video-embed iframe,
 .plyr__video-wrapper--fixed-ratio video {
   max-width: 100%;
-  max-height: auto;
   border: 0;
   height: 100%;
   left: 0;
@@ -1867,10 +1864,6 @@ a.plyr__control::before {
   position: absolute;
   right: 10px;
   z-index: 3;
-}
-
-.plyr__ads::after:empty {
-  display: none;
 }
 
 .plyr__cues {

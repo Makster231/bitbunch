@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, head, title, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* make sure to set some focus styles for accessibility */
 :focus { outline: 0 !important; }
@@ -279,7 +279,7 @@ a { text-decoration: none; }
 @keyframes plyr-fade-in { from { opacity: 0; }
   to { opacity: 1; } }
 
-.plyr { -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; direction: ltr; font-family: Avenir, "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; font-weight: 500; line-height: 1.7; max-width: 100%; max-height: auto; min-width: 200px; position: relative; text-shadow: none; -webkit-transition: -webkit-box-shadow 0.3s ease; transition: -webkit-box-shadow 0.3s ease; -o-transition: box-shadow 0.3s ease; -moz-transition: box-shadow 0.3s ease, -moz-box-shadow 0.3s ease; transition: box-shadow 0.3s ease; transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease, -moz-box-shadow 0.3s ease; }
+.plyr { -moz-osx-font-smoothing: auto; -webkit-font-smoothing: subpixel-antialiased; direction: ltr; font-family: Avenir, "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; font-weight: 500; line-height: 1.7; max-width: 100%; min-width: 200px; position: relative; text-shadow: none; -webkit-transition: -webkit-box-shadow 0.3s ease; transition: -webkit-box-shadow 0.3s ease; -o-transition: box-shadow 0.3s ease; -moz-transition: box-shadow 0.3s ease, -moz-box-shadow 0.3s ease; transition: box-shadow 0.3s ease; transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease, -moz-box-shadow 0.3s ease; }
 
 .plyr audio, .plyr video { -webkit-border-radius: inherit; -moz-border-radius: inherit; border-radius: inherit; height: auto; vertical-align: middle; width: 100%; }
 
@@ -489,7 +489,7 @@ a.plyr__control::after, a.plyr__control::before { display: none; }
 
 .plyr--full-ui.plyr--audio input[type="range"]:active::-ms-thumb { box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(47, 52, 61, 0.2), 0 0 0 3px rgba(0, 0, 0, 0.1); }
 
-.plyr__poster { max-width: 100%; max-height: auto; background-color: transparent; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; -webkit-transition: opacity 0.2s ease; -o-transition: opacity 0.2s ease; -moz-transition: opacity 0.2s ease; transition: opacity 0.2s ease; width: 100%; z-index: 1; }
+.plyr__poster { max-width: 100%; background-color: transparent; background-position: 50% 50%; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 100%; left: 0; opacity: 0; position: absolute; top: 0; -webkit-transition: opacity 0.2s ease; -o-transition: opacity 0.2s ease; -moz-transition: opacity 0.2s ease; transition: opacity 0.2s ease; width: 100%; z-index: 1; }
 
 .plyr--stopped.plyr__poster-enabled .plyr__poster { opacity: 1; }
 
@@ -533,7 +533,7 @@ a.plyr__control::after, a.plyr__control::before { display: none; }
 
 @media screen and (min-width: 960px) { .plyr__video-embed, .plyr__video-wrapper--fixed-ratio { padding-bottom: 540px !important; } }
 
-.plyr__video-embed iframe, .plyr__video-wrapper--fixed-ratio video { max-width: 100%; max-height: auto; border: 0; height: 100%; left: 0; position: absolute; top: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 100%; object-fit: cover; }
+.plyr__video-embed iframe, .plyr__video-wrapper--fixed-ratio video { max-width: 100%; border: 0; height: 100%; left: 0; position: absolute; top: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 100%; object-fit: cover; }
 
 .plyr--full-ui .plyr__video-embed > .plyr__video-embed__container { padding-bottom: 240%; position: relative; -webkit-transform: translateY(-38.28125%); -moz-transform: translateY(-38.28125%); -ms-transform: translateY(-38.28125%); -o-transform: translateY(-38.28125%); transform: translateY(-38.28125%); }
 
@@ -703,8 +703,6 @@ a.plyr__control::after, a.plyr__control::before { display: none; }
 .plyr__ads > div, .plyr__ads > div iframe { height: 100%; position: absolute; width: 100%; }
 
 .plyr__ads::after { background: rgba(47, 52, 61, 0.8); -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; bottom: 10px; color: #fff; content: attr(data-badge-text); font-size: 11px; padding: 2px 6px; pointer-events: none; position: absolute; right: 10px; z-index: 3; }
-
-.plyr__ads::after:empty { display: none; }
 
 .plyr__cues { background: currentColor; display: block; height: 32px; left: 0; margin: -16px 0 0; opacity: 0.8; position: absolute; top: 50%; width: 3px; z-index: 3; }
 
