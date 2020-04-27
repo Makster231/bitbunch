@@ -1,15 +1,27 @@
 "use strict";
 
 (function ($, window, document) {
+  $(function () {
+    if ($(window).width() < 960) {
+      var pic = new Image();
+      var pic2 = new Image();
+      var pic3 = new Image();
+      pic.src = "../../images/header/bg-menu--tablet.jpg";
+      pic2.src = "../../images/header/bg-menu--tablet-traingle.png";
+      pic3.src = "../../images/header/icon-lang.png";
+    }
+  });
+})(window.jQuery, window, document);
+
+(function ($, window, document) {
+  // check IOS userAgent
   function isiPhone() {
-    return (//Пользователь использует iPhone
-      navigator.platform.indexOf("iPhone") != -1 || //Пользователь использует iPod
-      navigator.platform.indexOf("iPod") != -1
-    );
+    return navigator.platform.indexOf("iPhone") != -1 || navigator.platform.indexOf("iPod") != -1;
   }
 
   $(function () {
     if ($(window).width() < 640) {
+      // add class increase thumb size on IOS, because very difficult to range the slider
       if (isiPhone()) {
         $(".js_team-body--scroll, .js_media-body--scroll").addClass("js_ios-device");
       }
@@ -135,7 +147,8 @@
 
     if (/mozilla/.test(userAgent) && !/firefox/.test(userAgent) && !/chrome/.test(userAgent) && !/safari/.test(userAgent) && !/opera/.test(userAgent) || /msie/.test(userAgent)) {
       InternetExplorer = true;
-    }
+    } // if browser is not IE 
+
 
     if (!InternetExplorer) {
       // activate plyr player
@@ -151,11 +164,14 @@
         threshold: 900
       });
     } else {
+      // if browser is IE 
+      // lazy load not working on IE, SO
       $("img[data-src]").each(function () {
         var $img_src = $(this);
         $img_src.attr("src", $img_src.attr("data-src"));
         $img_src.removeAttr("data-src");
-      });
+      }); // picture source not working on IE, SO
+
       $(".js_entry--footer source").each(function () {
         var $source_src = $(this);
         var $img = $(this).closest("picture").find("img");

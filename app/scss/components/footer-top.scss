@@ -228,11 +228,16 @@
         }
 
         @media (min-width: $lg) {
-          font-size: 36px;
+          font-size: 32px;
           line-height: 1.39;
-          max-width: 692px;
+          max-width: 610px;
           margin-bottom: 18px;
           text-align: left;
+        }
+
+        @media (min-width: $xl) {
+          font-size: 36px;
+          max-width: 692px;
         }
       }
 
@@ -271,12 +276,17 @@
           margin-bottom: 0;
           margin-right: 0;
           margin-top: 25px;
+          max-width: 240px;
 
           &.footer-block--link {
             margin-left: 0;
             text-align: left;
             margin-top: 0;
           }
+        }
+
+        @media (min-width: $xl) {
+          max-width: 290px;
         }
       }
     }
@@ -354,6 +364,8 @@
         transition: 0.4s ease;
         overflow: hidden;
         position: relative;
+        max-width: 100px;
+        max-width: max-content !important;
 
         &::before {
           content: "";
@@ -390,6 +402,7 @@
           font-size: 14px;
           line-height: 18px;
           margin-bottom: 14px;
+          margin-left: auto;
         }
 
         @media (min-width: $lg) {
@@ -397,8 +410,6 @@
           line-height: 19px;
           margin-bottom: 13px;
           max-width: 150px;
-          max-width: max-content;
-          margin-left: auto;
         }
       }
 
@@ -411,15 +422,11 @@
           font-size: 18px;
           line-height: 23px;
           margin-bottom: 15px;
-
+          margin-right: auto;
+          margin-left: 0;
           &:last-of-type {
             margin-bottom: 11px;
           }
-        }
-
-        @media (min-width: $lg) {
-          margin-right: auto;
-          margin-left: 0;
         }
       }
       .footer-text--bg {
@@ -472,6 +479,7 @@
       @media (min-width: $lg) {
         padding-top: 30px;
         max-width: 1140px;
+        box-sizing: border-box;
       }
     }
 

@@ -18,6 +18,8 @@
     ) {
       InternetExplorer = true;
     }
+
+    // if browser is not IE 
     if (!InternetExplorer) {
       // activate plyr player
       const players = Array.from(document.querySelectorAll(".js_player")).map(
@@ -29,12 +31,15 @@
         threshold: 900,
       });
     } else {
+      // if browser is IE 
+      // lazy load not working on IE, SO
       $("img[data-src]").each(function () {
         let $img_src = $(this);
         $img_src.attr("src", $img_src.attr("data-src"));
         $img_src.removeAttr("data-src");
       });
 
+      // picture source not working on IE, SO
       $(".js_entry--footer source").each(function () {
         let $source_src = $(this);
         let $img = $(this).closest("picture").find("img");

@@ -65,6 +65,7 @@ const path = {
 };
 
 const js_plugins = [
+	path.app.jsComponents + 'preload-images.js',
 	path.app.jsComponents + 'device-check.js',
 	path.app.jsComponents + 'header-nav.js',
 	path.app.jsComponents + 'media-slider.js',
