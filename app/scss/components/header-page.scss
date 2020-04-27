@@ -7,6 +7,9 @@
   @media (min-width: $md) {
     background-image: url(../../images/header/bg-tablet.jpg);
   }
+  @media (min-width: $lg) {
+    background-image: url(../../images/header/bg-desktop.jpg);
+  }
 
   &::after {
     content: "";
@@ -26,6 +29,10 @@
 
     @media (min-width: $md) {
       max-width: calc(100% - 100px);
+    }
+
+    @media (min-width: $xl) {
+      max-width: 1220px;
     }
 
     &--header {
@@ -48,6 +55,10 @@
             width: 179px;
             height: 50px;
           }
+          @media (min-width: $xl) {
+            width: 214px;
+            height: 60px;
+          }
         }
       }
 
@@ -60,6 +71,13 @@
     }
 
     &--body {
+      @media (min-width: $lg) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       h1 {
         font-family: "Hind Siliguri", sans-serif;
         font-weight: bold;
@@ -74,6 +92,14 @@
           font-size: 40px;
           margin-bottom: 24px;
         }
+
+        @media (min-width: $lg) {
+          width: 100%;
+          max-width: 586px;
+          font-size: 50px;
+          line-height: 1.24;
+          margin-bottom: 31px;
+        }
       }
 
       .entry-body--video {
@@ -82,7 +108,13 @@
         border-radius: 7px;
 
         @media (min-width: $md) {
-          margin-bottom: 24px;
+          margin-bottom: 48px;
+        }
+
+        @media (min-width: $lg) {
+          width: 529px;
+          height: 317px;
+          margin-bottom: 0;
         }
       }
 
@@ -90,6 +122,10 @@
         margin-bottom: 32px;
         @media (min-width: $md) {
           margin-bottom: 48px;
+        }
+        @media (min-width: $lg) {
+          margin-bottom: 67px;
+          max-width: 402px;
         }
 
         li {
@@ -106,6 +142,12 @@
             font-size: 18px;
             padding-left: 46px;
             margin-bottom: 17px;
+          }
+
+          @media (min-width: $lg) {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 14px;
           }
 
           &::before {
@@ -172,6 +214,21 @@
           line-height: 2;
           color: $brand-white;
         }
+        @media (min-width: $lg) {
+          display: none;
+        }
+      }
+    }
+
+    .plyr__video-wrapper--fixed-ratio {
+      @media (min-width: $lg) {
+        padding-bottom: 317px !important;
+      }
+    }
+
+    .plyr--stopped.plyr__poster-enabled .plyr__poster {
+      @media (min-width: $lg) {
+        background-image: url(../../images/video-poster--desktop.png) !important;
       }
     }
   }

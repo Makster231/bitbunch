@@ -5,19 +5,31 @@
 }
 
 .mr-tablet--0 {
-  @media (min-width: $md) and (max-width: $smaller-then-xl) {
+  @media (min-width: $md) and (max-width: $smaller-then-lg) {
     margin-right: 0 !important;
   }
 }
 .mr-desktop--0 {
-  @media (min-width: $xl) {
+  @media (min-width: $lg) {
     margin-right: 0 !important;
   }
 }
 
 .hidden-then--md {
-  display: none;
+  display: none !important;
   @media (min-width: $md) {
-    display: block;
+    display: block !important;
+  }
+}
+.hidden-then--lg {
+  display: none !important;
+  @media (min-width: $lg) {
+    display: block !important;
+  }
+}
+.visible-then--lg {
+  display: block !important;
+  @media (min-width: $lg) {
+    display: none !important;
   }
 }

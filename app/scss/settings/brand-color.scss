@@ -15,14 +15,18 @@ $brand-purpule: #8b0bff;
   color: $brand-purpule;
 }
 
+.bg-color--orange {
+  background-color: #ffa72e;
+}
+
+.bg-color--warning {
+  background: #fa8f68;
+}
+
 .bg-color--blue {
   background-color: #324ea3;
 }
 
-.bg-color--orange {
-  background-color: $brand-warning;
-}
-
 .bg-color--blue-light {
-  background-color: #5FBBFF;
+  background-color: #5fbbff;
 }

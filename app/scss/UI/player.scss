@@ -1057,7 +1057,7 @@ a.plyr__control::before {
 .plyr__poster {
   max-width: 100%;
   max-height: auto;
-  background-color: #000;
+  background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1079,6 +1079,11 @@ a.plyr__control::before {
 
 .plyr--stopped.plyr__poster-enabled .plyr__poster {
   opacity: 1;
+
+  @media (min-width: $md) {
+    background-image: url(../../images/video-poster--tablet.jpg) !important;
+  }
+
 }
 
 .plyr__time {
@@ -1250,7 +1255,7 @@ a.plyr__control::before {
 }
 
 .plyr--video {
-  background: #000;
+  background: transparent;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -1481,7 +1486,7 @@ a.plyr__control::before {
 }
 
 .plyr:-webkit-full-screen {
-  background: #000;
+  background: transparent;
   -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
   height: 100%;
@@ -1490,7 +1495,7 @@ a.plyr__control::before {
 }
 
 .plyr:-moz-full-screen {
-  background: #000;
+  background: transparent;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
   height: 100%;
@@ -1499,7 +1504,7 @@ a.plyr__control::before {
 }
 
 .plyr:-ms-fullscreen {
-  background: #000;
+  background: transparent;
   border-radius: 0 !important;
   height: 100%;
   margin: 0;
@@ -1507,7 +1512,7 @@ a.plyr__control::before {
 }
 
 .plyr:fullscreen {
-  background: #000;
+  background: transparent;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
@@ -1647,7 +1652,7 @@ a.plyr__control::before {
 }
 
 .plyr:-webkit-full-screen {
-  background: #000;
+  background: transparent;
   -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
   height: 100%;
@@ -1690,7 +1695,7 @@ a.plyr__control::before {
 }
 
 .plyr:-moz-full-screen {
-  background: #000;
+  background: transparent;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
   height: 100%;
@@ -1733,7 +1738,7 @@ a.plyr__control::before {
 }
 
 .plyr:-ms-fullscreen {
-  background: #000;
+  background: transparent;
   border-radius: 0 !important;
   height: 100%;
   margin: 0;
@@ -1775,7 +1780,7 @@ a.plyr__control::before {
 }
 
 .plyr--fullscreen-fallback {
-  background: #000;
+  background: transparent;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
@@ -2059,8 +2064,8 @@ button.plyr__control--overlaid {
 
 @media (min-width: 1367px) {
   button.plyr__control--overlaid {
-    height: 115px;
-    width: 115px;
+    width: 34px;
+    height: 45px;
   }
 }
 
@@ -2085,8 +2090,8 @@ button.plyr__control--overlaid svg {
 
 @media (min-width: 1367px) {
   button.plyr__control--overlaid svg {
-    height: 115px;
-    width: 115px;
+    width: 34px;
+    height: 45px;
   }
 }
 
