@@ -4,8 +4,19 @@
   }
 }
 
+.js_hidden {
+  display: none !important;
+}
+
+.w-mobile--0 {
+  @media (max-width: $md) {
+    width: 0 !important;
+    min-width: 0 !important;
+  }
+}
+
 .mr-tablet--0 {
-  @media (min-width: $md) and (max-width: $smaller-then-lg) {
+  @media screen and (min-width: $md) and (max-width: $smaller-then-lg) {
     margin-right: 0 !important;
   }
 }

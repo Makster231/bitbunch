@@ -6,8 +6,11 @@
 
 /* purgecss start ignore */
 //UI:
+@import "UI/animation";
 @import "UI/btn";
 @import "UI/player";
+@import "UI/burger-menu";
+
 //Components:
 @import "components/general";
 @import "components/wrapper-page";

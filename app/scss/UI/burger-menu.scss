@@ -1,0 +1,67 @@
+﻿.entry-btn--wrapper {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+
+  &::before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 0;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 15;
+    display: block;
+    transition: opacity 0.3s ease;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 7px 6px;
+  }
+
+  .entry-nav--btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 6px;
+    width: 22px;
+    height: 34px;
+    z-index: 20;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    & > span,
+    & > span::before,
+    & > span::after {
+      display: block;
+      position: absolute;
+      width: 21px;
+      height: 4px;
+      background-color: #324ea3;
+      border-radius: 2px;
+      transition-duration: 0.25s;
+    }
+
+    & > span {
+      width: 16px;
+      background-color: rgba(#324ea3, 0.3);
+    }
+
+    & > span::after {
+      background-color: rgba(#324ea3, 0.3);
+      width: 11px;
+    }
+
+    & > span::before {
+      content: "";
+      top: -8px;
+    }
+
+    & > span::after {
+      content: "";
+      top: 8px;
+    }
+  }
+}

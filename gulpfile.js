@@ -65,6 +65,7 @@ const path = {
 };
 
 const js_plugins = [
+	path.app.jsComponents + 'header-nav.js',
 	path.app.jsComponents + 'media-slider.js',
 	path.app.jsComponents + 'team-slider.js',
 	path.app.jsComponents + 'custom.js',

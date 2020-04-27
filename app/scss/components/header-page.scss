@@ -2,13 +2,14 @@
   position: relative;
   padding-top: 34px;
   background: url(../../images/header/bg-mobile.png) center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
   @media (min-width: $md) {
     background-image: url(../../images/header/bg-tablet.jpg);
   }
   @media (min-width: $lg) {
     background-image: url(../../images/header/bg-desktop.jpg);
+    padding-bottom: 155px;
   }
 
   &::after {
@@ -46,14 +47,53 @@
       align-items: center;
       margin-bottom: 36px;
 
+
       @media (min-width: $md) {
         margin-bottom: 70px;
+      }
+
+      @media (min-width: $lg) {
+        .entry-nav--burger {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: $smaller-then-lg) {
+        ul {
+          display: none !important;
+
+          &.entry-nav--burger {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+
+            .btn {
+              font-size: 12px;
+              line-height: 16px;
+              padding-top: 9px;
+              padding-bottom: 9px;
+              width: 90px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+
+      @media (max-width: $smaller-then-md) {
+        ul {
+          &.entry-nav--burger {
+            .btn {
+             display: none;
+            }
+          }
+        }
       }
 
       .entry-header--logo {
         a {
           display: block;
         }
+
         img {
           width: 122px;
           height: 34px;
@@ -70,109 +110,105 @@
       }
 
       .entry-header--nav {
-        // img {
-        //   width: 34px;
-        //   height: 34px;
-        // }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          font-family: "Sarabun", sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 19px;
+          display: block;
+          color: $brand-white;
+          overflow: hidden;
+          position: relative;
 
-        @media (min-width: $lg) {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          a {
-            font-family: "Sarabun", sans-serif;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 19px;
-            display: block;
-            color: $brand-white;
-            overflow: hidden;
-            position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: -100%;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $brand-white;
+            transition: 0.4s ease;
+          }
+
+          &:hover {
+            &::before {
+              left: 0;
+              background-color: darken($brand-white, 10%);
+            }
+          }
+
+          &:active {
+            color: darken($brand-white, 10%);
+            transition: 0s;
 
             &::before {
-              content: "";
-              position: absolute;
-              left: -100%;
-              bottom: 0;
-              width: 100%;
-              height: 1px;
-              background-color: $brand-white;
-              transition: 0.4s ease;
-            }
-
-            &:hover {
-              color: darken($brand-white, 10%);
-
-              &::before {
-                left: 0;
-                background-color: darken($brand-white, 10%);
-              }
-            }
-
-            &:active {
-              color: darken($brand-white, 20%);
-              transition: 0s;
-
-              &::before {
-                background-color: darken($brand-white, 20%);
-              }
-            }
-          }
-
-          li {
-            &:first-of-type {
-              margin-left: 0;
-            }
-            @media (min-width: $lg) {
-              margin-left: 30px;
-            }
-
-            @media (min-width: $xl) {
-              margin-left: 40px;
-            }
-          }
-
-          .entry-nav {
-            &--menu {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-            }
-            &--cabinet {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-
-              @media (min-width: $lg) {
-                margin-left: 100px;
-              }
-
-              @media (min-width: $xl) {
-                margin-left: 217px;
-              }
-
-              li {
-                &:last-of-type {
-                  margin-left: 25px;
-                  a {
-                    width: 100px;
-                    padding-top: 11px;
-                    padding-bottom: 11px;
-                    font-size: 14px;
-                    line-height: 18px;
-                  }
-                }
-              }
-
-              .btn {
-                &::before {
-                  content: none;
-                }
-              }
+              background-color: darken($brand-white, 10%);
             }
           }
         }
+
+        li {
+          &:first-of-type {
+            margin-left: 0;
+          }
+          @media (min-width: $lg) {
+            margin-left: 30px;
+          }
+
+          @media (min-width: $xl) {
+            margin-left: 40px;
+          }
+        }
+
+        .entry-nav {
+          &--menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          &--cabinet {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media (min-width: $lg) {
+              margin-left: 100px;
+            }
+
+            @media (min-width: $xl) {
+              margin-left: 217px;
+            }
+
+            li {
+              &:last-of-type {
+                margin-left: 25px;
+                a {
+                  width: 100px;
+                  padding-top: 11px;
+                  padding-bottom: 11px;
+                  font-size: 14px;
+                  line-height: 18px;
+                }
+              }
+            }
+
+            .btn {
+              &::before {
+                content: none;
+              }
+            }
+            // }
+          }
+        }
+      }
+
+      .entry-burger--text {
+        display: none;
       }
     }
 
@@ -291,7 +327,7 @@
           margin-bottom: 58px;
         }
         @media (min-width: $lg) {
-          margin-bottom: 155px;
+          margin-bottom: 0;
         }
       }
     }

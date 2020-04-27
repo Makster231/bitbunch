@@ -1,6 +1,24 @@
 "use strict";
 
 (function ($, window, document) {
+  function headerNav() {
+    $(".js_entry-nav--btn").click(function () {
+      if (!$("body").hasClass("js_open-menu")) {
+        $("body").addClass("js_open-menu");
+      } else {
+        $("body").removeClass("js_open-menu");
+      }
+    });
+  }
+
+  $(function () {
+    if ($(window).width() < 960) {
+      headerNav();
+    }
+  });
+})(window.jQuery, window, document);
+
+(function ($, window, document) {
   function mediaSlider() {
     var slider = {
       container: $(".js_media-body--slider"),
@@ -76,7 +94,7 @@
   $(function () {
     //show content after loaded page
     $("body").css("opacity", "1");
-    var players = Array.from(document.querySelectorAll(".js-player")).map(function (p) {
+    var players = Array.from(document.querySelectorAll(".js_player")).map(function (p) {
       return new Plyr(p, {
         fullscreen: {
           enabled: false
