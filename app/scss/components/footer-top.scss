@@ -352,14 +352,38 @@
         margin-bottom: 15px;
         display: block;
         transition: 0.4s ease;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -100%;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $brand-white;
+          transition: 0.4s ease;
+        }
 
         &:last-of-type {
           margin-bottom: 0;
         }
 
         &:hover {
-          text-decoration: underline;
-          color: darken($brand-white, 20%);
+          &::before {
+            left: 0;
+            background-color: darken($brand-white, 10%);
+          }
+        }
+
+        &:active {
+          color: darken($brand-white, 10%);
+          transition: 0s;
+
+          &::before {
+            background-color: darken($brand-white, 10%);
+          }
         }
 
         @media (min-width: $md) {
