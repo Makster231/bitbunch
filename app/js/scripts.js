@@ -93,13 +93,18 @@
 (function ($, window, document) {
   $(function () {
     //show content after loaded page
-    $("body").css("opacity", "1");
+    $("body").css("opacity", "1"); // activate plyr player
+
     var players = Array.from(document.querySelectorAll(".js_player")).map(function (p) {
       return new Plyr(p, {
         fullscreen: {
           enabled: false
         }
       });
+    }); // lazy load images
+
+    $(".lazy").Lazy({
+      threshold: 900
     });
   });
 })(window.jQuery, window, document);
