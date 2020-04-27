@@ -1179,7 +1179,9 @@ img { max-width: 100%; object-fit: cover; width: 100%; }
 
 @media (min-width: 992px) { .founders-wrapper--header p { max-width: 580px; font-size: 18px; line-height: 1.72; } }
 
-.founders-wrapper--body .founders-body--media { overflow: hidden; border-radius: 7px; }
+.founders-wrapper--body .founders-body--media { overflow: hidden; width: 100%; text-align: center; border-radius: 7px; }
+
+.founders-wrapper--body .founders-body--media video { width: 100%; }
 
 .team { padding-bottom: 48px; }
 

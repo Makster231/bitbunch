@@ -58,7 +58,6 @@
       background-size: contain;
     }
 
-
     @media (min-width: $xl) {
       height: 550px;
       top: -21%;
@@ -161,7 +160,13 @@
     &--body {
       .founders-body--media {
         overflow: hidden;
+        width: 100%;
+        text-align: center;
         border-radius: 7px;
+
+        video {
+          width: 100%;
+        }
       }
     }
   }
