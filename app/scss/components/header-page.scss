@@ -47,7 +47,6 @@
       align-items: center;
       margin-bottom: 36px;
 
-
       @media (min-width: $md) {
         margin-bottom: 70px;
       }
@@ -83,7 +82,7 @@
         ul {
           &.entry-nav--burger {
             .btn {
-             display: none;
+              display: none;
             }
           }
         }
@@ -263,6 +262,7 @@
           margin-bottom: 0;
           width: 430px;
           height: 250px;
+          transform: perspective(500px) rotateY(-5deg);
         }
 
         @media (min-width: $xl) {
@@ -432,11 +432,7 @@
     .plyr--stopped.plyr__poster-enabled .plyr__poster {
       @media (min-width: $lg) {
         background-image: url(../../images/video-poster--desktop.png) !important;
-        background-size: 100% 250px;
-        background-position: top;
-      }
-      @media (min-width: $xl) {
-        background-size: 100%;
+        background-size: 150%;
         background-position: center;
       }
     }

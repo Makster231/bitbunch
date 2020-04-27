@@ -1,12 +1,47 @@
 "use strict";
 
 (function ($, window, document) {
+  function isiPhone() {
+    return (//Пользователь использует iPhone
+      navigator.platform.indexOf("iPhone") != -1 || //Пользователь использует iPod
+      navigator.platform.indexOf("iPod") != -1
+    );
+  }
+
+  $(function () {
+    if ($(window).width() < 640) {
+      if (isiPhone()) {
+        $(".js_team-body--scroll, .js_media-body--scroll").addClass("js_ios-device");
+      }
+    }
+  });
+})(window.jQuery, window, document);
+
+(function ($, window, document) {
+  function preventDefault(e) {
+    e.preventDefault();
+  }
+
+  function disableScroll() {
+    document.body.addEventListener("touchmove", preventDefault, {
+      passive: false
+    });
+  }
+
+  function enableScroll() {
+    document.body.removeEventListener("touchmove", preventDefault, {
+      passive: false
+    });
+  }
+
   function headerNav() {
     $(".js_entry-nav--btn").click(function () {
       if (!$("body").hasClass("js_open-menu")) {
         $("body").addClass("js_open-menu");
+        disableScroll();
       } else {
         $("body").removeClass("js_open-menu");
+        enableScroll();
       }
     });
   }
@@ -38,7 +73,7 @@
     container.css({
       width: $media_slider_width + "px"
     });
-    scroll.attr("max", $media_slider_width - $(window).width() + 48);
+    scroll.attr("max", $media_slider_width - $(window).width() - item_width * 2 + 24);
     scroll.on("input change", function () {
       var $this = $(this);
       container.css({
@@ -74,7 +109,7 @@
     container.css({
       width: $team_slider_width + "px"
     });
-    scroll.attr("max", $team_slider_width - $(window).width() + margin * 2);
+    scroll.attr("max", $team_slider_width - $(window).width() - item_width * 2);
     scroll.on("input change", function () {
       var $this = $(this);
       container.css({

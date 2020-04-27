@@ -18,7 +18,10 @@
       width: $media_slider_width + "px",
     });
 
-    scroll.attr("max", $media_slider_width - $(window).width() + 48);
+    scroll.attr(
+      "max",
+      $media_slider_width - $(window).width() - item_width * 2 + 24
+    );
 
     scroll.on("input change", function () {
       let $this = $(this);

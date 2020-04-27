@@ -18,7 +18,10 @@
       width: $team_slider_width + "px",
     });
 
-    scroll.attr("max", $team_slider_width - $(window).width() + margin * 2);
+    scroll.attr(
+      "max",
+      $team_slider_width - $(window).width() - item_width * 2
+    );
 
     scroll.on("input change", function () {
       let $this = $(this);

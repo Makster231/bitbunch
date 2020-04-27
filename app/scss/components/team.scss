@@ -273,6 +273,12 @@
           cursor: pointer;
         }
 
+        &.js_ios-device {
+          &::-webkit-slider-thumb {
+            height: 8px;
+          }
+        }
+
         @media (min-width: $md) {
           display: none;
         }

@@ -9,6 +9,7 @@
   .entry {
     height: 100vh;
     box-sizing: border-box;
+    overflow: hidden;
     background-image: url(../../images/header/bg-menu--tablet.jpg);
 
     &::after {
@@ -90,7 +91,7 @@
       transform: translate(0, 50%);
       z-index: 99;
 
-      @media (min-width: $xs) {
+      @media (min-width: 410px) {
         top: 190px;
       }
 
