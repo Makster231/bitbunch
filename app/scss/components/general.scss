@@ -1,4 +1,5 @@
 ﻿body {
+  overflow-x: hidden;
   background-color: #fafbff;
 }
 
@@ -13,7 +14,7 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #324EA3;
+  background: #324ea3;
   box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.16);
 }
 
