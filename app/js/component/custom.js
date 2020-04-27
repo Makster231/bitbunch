@@ -29,10 +29,16 @@
         threshold: 900,
       });
     } else {
-      $("img").each(function () {
-        var $img_src = $(this);
+      $("img[data-src]").each(function () {
+        let $img_src = $(this);
         $img_src.attr("src", $img_src.attr("data-src"));
         $img_src.removeAttr("data-src");
+      });
+
+      $(".js_entry--footer source").each(function () {
+        let $source_src = $(this);
+        let $img = $(this).closest("picture").find("img");
+        $img.attr("src", $source_src.attr("srcset"));
       });
     }
   });
